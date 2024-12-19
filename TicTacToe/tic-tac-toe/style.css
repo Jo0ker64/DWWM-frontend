@@ -1,0 +1,140 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+:root{
+    --cell-size: 100px;
+    --symbol-size: calc(var(--cell-size)*0.8);
+}
+
+body{
+    margin: 0;
+    background-color: rgb(32, 32, 32);
+    background-image: url("https://janschreiber.github.io/img2/black-chalk.jpg");
+    color: rgb(230, 230, 230);
+    text-align: center;
+    font-size: 0.7em;
+    position: absolute;
+}
+
+.grille{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: repeat(5,auto);
+ 
+}
+
+.cell{
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3),
+.cell:nth-child(4),
+.cell:nth-child(5){
+    border-top: none;
+}
+
+.cell:nth-child(5n+1){
+    border-left: none;
+}
+
+.cell:nth-child(5n+5){
+    border-right: none;
+}
+
+.cell:last-child,
+.cell:nth-child(21),
+.cell:nth-child(22),
+.cell:nth-child(23),
+.cell:nth-child(24){
+    border-bottom: none;
+}
+
+.cell.x::before,
+.cell.x::after{
+    content: "";
+    width: calc(var(--symbol-size) * 0.10);
+    height: var(--symbol-size);
+    background-color: white;
+    position: absolute;
+}
+
+.cell.x::before{
+    transform: rotate(45deg);
+}
+.cell.x::after{
+    transform: rotate(-45deg);
+}
+
+.cell.circle::before,
+.cell.circle::after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.cell.circle::before{
+    width: var(--symbol-size);
+    height: var(--symbol-size);
+    background-color: white;
+}
+
+.cell.circle::after{
+    width: calc(var(--symbol-size)* 0.8);
+    height: calc(var(--symbol-size)* 0.8);
+    background-image: url("https://janschreiber.github.io/img2/black-chalk.jpg");
+    
+}
+
+.cell.x, .cell.circle{
+    cursor:not-allowed;
+}
+
+.screen_message{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.671);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    flex-direction: column;
+}
+.screen_message button{
+    font-size: 2rem;
+    border: 1px solid black;
+    padding: 0.25em, 0.5em;
+    cursor: pointer;
+    background-color: white;
+}
+
+.screen_message.active{
+    display: flex;
+}
+
+#restartButton{
+    font-size: 2rem;
+    border: 1px solid black;
+    padding: 0.25em, 0.5em;
+    cursor: pointer;
+    background-color: white;
+}

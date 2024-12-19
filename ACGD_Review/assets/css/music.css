@@ -1,0 +1,80 @@
+.grey {
+	background-color: #434343;
+}
+.bold {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 700;
+}
+.light {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 300;
+}
+.gras {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 900;
+}
+.thin {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 100;
+}
+.titre {
+	background-color: #434343;
+	color: #FFF;
+	font-size: 17px;
+}
+.text {
+	font-size: 13px;
+}
+.titre1 {
+	font-size: 20;
+	color: #1BB5B0;
+}
+.titre3 {
+	font-size: 20;
+	font-family: 'Noto Sans', sans-serif;
+	color: rgb(255, 254, 254);
+	background-color:  rgba(27, 11, 11, 0.7);
+	font-weight: 700;
+}
+.titre2 {
+	font-size: 20;
+	color: #1BB5B0;
+	font-family: 'Noto Sans', sans-serif;
+	text-align: left;
+}
+#confirmer {
+	background-color: #f4661b;
+	color: white;
+	padding: 10px 20px;
+	font-family: 'Noto Sans', sans-serif;
+	border: none;
+	border-radius: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	outline: none;
+}
+.navbar-nav {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+.navbar-toggler {
+	margin-left: auto;
+}
+#bouton_orange {
+	background-color: #f4661b;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	outline: none;
+}
+:root {
+	--orange: #f4661b;
+}

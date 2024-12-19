@@ -1,0 +1,30 @@
+ body {
+        background-color: rgb(218, 218, 218);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      
+      input {
+        width: 95%;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 5px;
+      }
+
+      .styled {
+        border: 0;
+        line-height: 2.5;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        border-radius: 20px;
+        background-color: rgb(122, 25, 25);
+    } 
+
+  

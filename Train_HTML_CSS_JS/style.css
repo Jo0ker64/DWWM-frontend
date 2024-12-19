@@ -1,0 +1,9 @@
+body{
+    background-color: grey;
+}
+
+
+#train {
+    position: relative;
+    cursor: pointer;
+  }

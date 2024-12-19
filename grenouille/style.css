@@ -1,0 +1,23 @@
+header{
+	top:0;
+	background:url(imgs/header.png) repeat-x;
+	position:absolute;
+	height:88px;
+	width:100%;
+}
+body{
+	background:#26516f url(imgs/bg.png) repeat-y center 88px;
+	margin:0;
+}
+canvas{
+	display: block;
+	position:relative;
+   	margin: 32px auto 0 auto;
+  	box-shadow: 2px 1px 12px #000;
+	border: solid  3px rgba(255,255,255,0.35);
+}
+footer{
+	margin:0 auto;
+	height:167px;
+	width:370px;
+}

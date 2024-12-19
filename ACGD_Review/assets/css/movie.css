@@ -1,0 +1,190 @@
+:root {
+    --orange: #f4661b;
+}
+
+li img {
+    width: 100%;
+
+}
+
+#box-shadow {
+    -webkit-box-shadow: 8px 6px 7px -1px #000000;
+    box-shadow: 8px 6px 7px -1px #000000;
+}
+
+.main_frame {
+    border: 1px solid var(--color-light-grey);
+    width: 100%;
+    height: 100%;
+}
+
+.bg_grey {
+    background-color: #434343;
+    ;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.thin {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100;
+}
+
+.light {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+}
+
+.bold {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+.gras {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900;
+}
+
+.h1 {
+    font-family: 'noto sans', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F4661B;
+
+}
+
+.h2 {
+    font-family: 'noto sans', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: #434343;
+}
+
+.h3 {
+    font-family: 'noto sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+}
+
+.form-control {
+    width: 60%;
+}
+
+
+
+
+.py-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.px-48 {
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.px-80 {
+    padding-left: 80px;
+    padding-right: 80px
+}
+
+.px-128 {
+    padding-left: 128px;
+    padding-right: 128px;
+}
+
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+.bg_grey {
+    background-color: #434343;
+}
+
+.bg_light {
+    background-color: #d9d9d9;
+}
+
+.light_grey color_light_grey {
+    color: #000000;
+}
+
+.link a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-item a {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 900;
+
+}
+
+.navbar-nav .nav-item a:hover {
+    color: #f4661b;
+}
+
+.fa-user,
+.fa-lock,
+.fa-magnifying-glass {
+    color: #f4661b;
+}
+
+
+/*   RESPONSIVE 
+/* Styles de base pour tous les écrans */
+/* body {
+    font-size: 16px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Styles pour les écrans de petite à moyenne taille (par exemple, smartphones et tablettes en mode portrait) */
+/* @media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+    } */
+
+    /* Ajoutez d'autres styles pour les écrans de taille moyenne si nécessaire */
+
+
+/* Styles pour les écrans de taille moyenne à grande (par exemple, tablettes en mode paysage et ordinateurs portables) */
+/* @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 80%;
+    } */
+
+    /* Ajoutez d'autres styles pour les écrans de taille moyenne à grande si nécessaire */
+    
+
+/* Styles pour les écrans plus grands (par exemple, ordinateurs de bureau) */
+/* @media only screen and (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 70%;
+    }
+
+    /* Ajoutez d'autres styles pour les écrans plus grands si nécessaire */
+

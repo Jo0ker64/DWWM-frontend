@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: rgba(255, 255, 255, 0) url(./fond2.png) no-repeat center center fixed;
+    background-size: cover;
+    /* opacity: 20%; */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+  }
+  
+  .game-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .game-container div:hover {
+    transform: scale(150%);
+    cursor:pointer;
+  }
+
+  .game-container div {
+    display: inline-block;
+    margin: 0 1rem;
+    transition: all 0.4s ease-in-out;
+  }
+
+  #result {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-family: 'Miltonian Tattoo', serif;
+    text-align: center;
+    color: black;
+    padding: 2rem 1rem;
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-family: 'Miltonian Tattoo', serif;
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+  }
+
+  p { 
+    font-family: 'Miltonian Tattoo', serif;
+    text-align: center;
+    color: black;
+    font-size: 1.5rem; 
+  }
+ 
+table{
+    margin: auto;
+}
+th{
+    text-align: center;
+}

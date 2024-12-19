@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&family=Noto+Sans:wght@500&family=Roboto:wght@100&family=Sixtyfour&family=Stick&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./images/sheldon.png" />
+    <title>Chifoumi de Sheldon Cooper</title>
+</head>
+
+<body>
+
+    <header>    
+        <h1>Papier, Pierre, Ciseaux, Spock, Lézard !!! By Sheldon Copper</h1>
+    </header>
+
+    <div class="game-container">
+        <div onclick="play('pierre')"><img src="./images/rock.png" height="200" width="200"></div>
+        <div onclick="play('caillou')"> <img src="./images/scissors.png" height="200" width="200"></div>         
+        <div onclick="play('feuille')"><img src="./images/paper.png" height="200" width="200"></div> 
+        <div onclick="play('lezard')"><img src="./images/lizard.png" height="200" width="200"></div> 
+        <div onclick="play('spock')"><img src="./images/spock.png" height="200" width="200"></div> 
+      </div>
+      <div id="result"></div>
+
+
+      <table>
+
+        <caption>
+            <h2>Rappelle des régles</h2>
+        </caption>
+
+        <tr>
+            <th><img src="./images/regle.png" height="500" width="500"></th>
+            <th>
+                <p> La pierre émousse le ciseau et gagne.<br>
+                    La pierre écrase le lézard et gagne.<br>
+                    La feuille enveloppe la pierre et gagne.<br>
+                    La feuille discrédite Spock et gagne.<br>
+                    Le ciseau coupe la feuille et gagne.<br>
+                    Le ciseau décapite le lézard et gagne.<br>
+                    Le lézard empoisonne Spock et gagne.<br>
+                    Le lézard mange le papier et gagne.<br>
+                    Spock écrase le ciseau et gagne.<br>
+                    Spock vaporise la pierre et gagne.<br>
+                </p>
+
+            </th>
+        </tr>
+    </table>
+
+
+    <!-- <header>    
+        <h1>Papier, Pierre, Ciseaux, Spock, Lézard !!!</h1>
+    </header>
+
+
+
+    <div class="choices">
+        <div id="rock"><img src="./images/rock.png" height="200" alt="Caillou"></div>
+        <div id="paper"><img src="./images/paper.png" height="200" alt="Papier"></div>
+        <div id="scissors"><img src="./images/scissors.png" height="200" alt="Ciseaux"></div>
+        <div id="lizard"><img src="./images/lizard.png" height="200" alt="Lézard"></div>
+        <div id="spock"><img src="./images/spock.png" height="200" alt="Spock"></div>
+    </div>
+    <br>
+    <br>
+    <h2 id="gameStatus">Sélectionner votre arme!</h2>
+    <br>
+    <h2 id="gameScore" class=" score">Humain: 0 | IA: 0</h2>
+    <br>
+
+
+    <table>
+
+        <caption>
+            <h2>Rappelle des régles</h2>
+        </caption>
+
+        <tr>
+            <th><img src="./images/regle.png" height="500" width="500"></th>
+            <th>
+                <p> La pierre émousse le ciseau et gagne.<br>
+                    La pierre écrase le lézard et gagne.<br>
+                    La feuille enveloppe la pierre et gagne.<br>
+                    La feuille discrédite Spock et gagne.<br>
+                    Le ciseau coupe la feuille et gagne.<br>
+                    Le ciseau décapite le lézard et gagne.<br>
+                    Le lézard empoisonne Spock et gagne.<br>
+                    Le lézard mange le papier et gagne.<br>
+                    Spock écrase le ciseau et gagne.<br>
+                    Spock vaporise la pierre et gagne.<br>
+                </p>
+
+            </th>
+        </tr>
+    </table> -->
+
+    <script src="main.js"></script>
+</body>
+
+</html>

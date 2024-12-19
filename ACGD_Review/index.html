@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>accueil areview</title>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="./assets/css/index.css" rel="stylesheet">
+    <!--font NOTO-SANS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER LAST MODIFICATIONS -->
+    <header class="sticky-top" style="background-color: #434343;">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid align-items-center">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/image/areview-header.png" alt="LOGO" width="200" height="100%">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex column-gap-2 align-items-center ms-auto order-lg-2" role="search">
+                        <input class="form-control thin" type="search" placeholder="Search" aria-label="Search">
+                        <a href="index.html"><i class="fa-solid fa-magnifying-glass"
+                                style="width: 20px;height: 100%;"></i></a>
+                        <button class="btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            <i class="fa-solid fa-user" style="width: 20px; height: 100%;"></i>
+                        </button>
+                    </form>
+                    <ul class="navbar-nav d-flex flex-fill text-center order-lg-1">
+                        <li class="nav-item flex-fill">
+                            <a class="nav-link" href="movies.html">cinéma</a>
+                        </li>
+                        <li class="nav-item flex-fill">
+                            <a class="nav-link" href="series.html">séries</a>
+                        </li>
+                        <li class="nav-item flex-fill">
+                            <a class="nav-link" href="video_game.html">gaming</a>
+                        </li>
+                        <li class="nav-item flex-fill">
+                            <a class="nav-link" href="music.html">musique</a>
+                        </li>
+                        <li class="nav-item flex-fill">
+                            <a class="nav-link" href="book.html">livre</a>
+                        </li>
+                        <li class="nav-item flex-fill">
+                            <a class="nav-link" href="evenement.html">événements</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-end " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header ">
+                <h5 class="offcanvas-title " id="offcanvasWithBothOptionsLabel">Se connecter</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"> </button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="input-group my-1" id="Pseudo">
+                    <span class="input-group-text " id="logo_pseudo">
+                        <i class="fa-solid fa-user" style="color: #f4661B;"></i>
+                    </span>
+                    <div class="col-sm ">
+                        <input type="text" class="form-control" placeholder="Pseudo / email" aria-label="Login"
+                            aria-describedby="addon-wrapping">
+                    </div>
+                </div>
+                <div class="input-group my-1" id="password">
+                    <span class="input-group-text " id="logo_cadenas">
+                        <i class="fa-solid fa-lock" style="color: #f4661B;"></i>
+                    </span>
+                    <div class="col-sm ">
+                        <input type="password" class="form-control" placeholder="Mot de passe" aria-label="Login"
+                            aria-describedby="addon-wrapping">
+                    </div>
+                </div>
+                <div class="row my-1">
+                    <div class="form-check ms-2 text-start">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Se souvenir de moi
+                        </label>
+                    </div>
+                </div>
+                <div class="row my-1 text-center">
+                    <a href=""> Mot de passe oublié ?</a>
+                </div>
+                <div class="row mt-3 text-center">
+                    <a href="account.html"><button class="btn" type="submit" id="bouton_orange"> Se connecter </button>
+                    </a>
+                </div>
+                <div class="row my-1 text-center">
+                    <p>Vous n'avez pas encore de compte ? <br> Rejoignez-nous !</p>
+                    <a href="login.html"><button class="btn" type="submit" id="bouton_orange"> S'inscrire </button> </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--MAIN PART HOME PAGE-->
+    <main>
+        <!--Slider-->
+        <div class="row" id="banner">
+            <div class="col-12 col-md-12">
+                <img src="./assets/image/accueil/slide-acceuil.jpg" alt="slider" width="1920" height="305"
+                    class="slider mt-3">
+                <!--<h1 class="slide text-center">Actuellement</h1>-->
+            </div>
+        </div>
+
+        <!--Hook of the web site-->
+        <div>
+            <h1 class="tittle text-uppercase gras text-center py-3 titre mb-1 "><strong>distinguer le remarquable du
+                    banal!</strong></h1>
+        </div>
+
+        <div class="container-fluid">
+            <!--Category 1 title-->
+            <section class="col-12">
+                <div class="row">
+                    <h2 class="category text-uppercase gras text-center py-2 stitre"><strong>cinéma</strong></h2>
+                    <!--MOVIE-->
+                    <article class="col-4">
+                        <img class="img-fluid mt-3 rounded-5" src="./assets/image/accueil/cimema-accueil.jpg"
+                            alt="image film aquaman" width="192" height="127" style="height: auto; width: auto;">
+                    </article>
+                    <!--Movie section 1-->
+                    <div class="col-8 pt-3">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/accine-aquaman.jpg" alt="image film aquaman"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <h3 class="align-baseline text-capitalize"><strong>aquaman</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Movie section 2-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/accine-barbie.jpg" alt="image film aquaman"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <h3 class="align-baseline text-capitalize"><strong>barbie</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Movie section 3-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/accine-dune.jpg" alt="image film dune"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <h3 class="align-baseline text-capitalize"><strong>dune</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Movie section 4-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/accine-krisha.jpg" alt="image film krisha"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <h3 class="align-baseline text-capitalize"><strong>krisha</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Movie section 5-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/accine-dvdspec.jpg" alt="image film dvd spectacle"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <h3 class="align-baseline text-capitalize"><strong>dvd spectacle</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Movie section 6-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/accine-lanuee.jpg" alt="image film la nuée"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <h3 class="align-baseline text-capitalize"><strong>la nuée</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container-fluid">
+            <!--Category 2 title-->
+            <section class="col-12">
+                <div class="row">
+                    <h2 class="category text-uppercase gras text-center py-2 stitre mt-3"><strong>série</strong></h2>
+                    <!--SERIES-->
+                    <div class="col-sm-8 pt-3">
+                        <div class="row">
+                            <!--Serie section 1-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 text-lg-end">
+                                        <h3 class="align-baseline text-capitalize"><strong>aman</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid rounded-5"
+                                            src="./assets/image/accueil/acserie-aman.jpg" alt="image série aman"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Serie section 2-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 text-lg-end">
+                                        <h3 class="align-baseline text-capitalize"><strong>misanthrope</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/acserie-misanthrope.png" alt="image série misanthrope "
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Serie section 3-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 text-lg-end">
+                                        <h3 class="align-baseline text-capitalize"><strong>iris et les hommes</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid rounded-5"
+                                            src="./assets/image/accueil/acserie-iris.jpg" alt="image série iris et les hommes"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Serie section 4-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 text-lg-end">
+                                        <h3 class="align-baseline text-capitalize"><strong>pauvre créature</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/acserie-pauvrecrea.jpg" alt="image série pauvre créature"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Serie section 5-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 text-lg-end">
+                                        <h3 class="align-baseline text-capitalize"><strong>krisha et le maître</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>                                    
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/acserie-krisha.jpg" alt="image série krisha et le maître"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Serie section 6-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 text-lg-end">
+                                        <h3 class="align-items-lg-baseline text-capitalize"><strong>un coup de dés</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>                                   
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/acserie-coupde.jpg" alt="image série un coup de dés"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                </div>
+                            </div>
+                         </div>
+                    </div>     
+                <div class="col-4">
+                    <div class="row">
+                        <article class="col-12">
+                            <img class="img-fluid mt-3 rounded-5" src="./assets/image/accueil/serie-accueil.jpg"
+                                alt="image film aquaman" width="490" height="453" style="height: auto; width: auto;">
+                        </article>
+                    </div>
+                </div>
+             </section>
+        </div>
+        <div class="container-fluid">
+            <!--Category 3 title-->
+            <section class="col-12">
+                <div class="row">
+                    <h2 class="category text-uppercase gras text-center py-2 stitre mt-3"><strong>gaming</strong></h2>
+                    <!--GAMING-->
+                    <article class="col-4">
+                        <img class="img-fluid mt-3 rounded-5" src="./assets/image/accueil/gaming-accueil.jpg"
+                            alt="image film aquaman" width="192" height="127" style="height: auto; width: auto;">
+                    </article>
+                    <div class="col-8">
+                        <div class="row">
+                            <!--Gaming section 1-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/acgame-fortnite.jpg" alt="image gaming fortnite"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <h3 class="align-baseline text-capitalize"><strong>fortnite</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Gaming section 2-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/acgame-finalf.jpg" alt="image gaming final fantasy VII"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <h3 class="align-baseline text-capitalize"><strong>final fantasy VII</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Gaming section 3-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/acgame-starwars.jpg" alt="image gaming star wars outland"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <h3 class="align-baseline text-capitalize"><strong>star wars outland</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Gaming section 4-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/acgame-dragond.jpg" alt="image gaming dragon dogma II"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <h3 class="align-baseline text-capitalize"><strong>dragon dogma II</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Gaming section 5-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/acgame-hollow.jpg" alt="image gaming hollowknight"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <h3 class="align-baseline text-capitalize"><strong>hollowknight</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Gaming section 6-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/acgame-hades.jpg" alt="image gaming hades II"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <h3 class="align-baseline text-capitalize"><strong>hades II</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container-fluid">
+            <!--Category 4 title-->
+            <section class="col-12">
+                <div class="row">
+                    <h2 class="category text-uppercase gras text-center py-2 stitre mt-3"><strong>musique</strong></h2>
+                    <!--MUSIC-->
+               <div class="col-sm-8">
+                        <div class="row">
+                            <!--Music section 1-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 text-lg-end">
+                                        <h3 class="mt-2"><strong>20&2</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid rounded-5"
+                                            src="./assets/image/accueil/acmus-vinght.jpg" alt="image musique 20&2"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Music section 2-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 text-lg-end">
+                                        <h3 class="align-baseline text-capitalize"><strong>orqideas</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/acmus-orchid.jpg" alt="image musique orqideas "
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Music section 3-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 text-lg-end">
+                                        <h3 class="align-baseline text-capitalize"><strong>24</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid rounded-5"
+                                            src="./assets/image/accueil/acmus-deuxquatre.jpg" alt="image musique 24"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Music section 4-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 text-lg-end">
+                                        <h3 class="align-baseline text-capitalize"><strong>bluedron</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/acmus-blued.jpg" alt="image musique bluedron"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Music section 5-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 text-lg-end">
+                                        <h3 class="align-baseline text-capitalize"><strong>nightshift mix</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>                                    
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/acmus-nights.jpg" alt="image musique nightshift mix"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Music section 6-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 text-lg-end">
+                                        <h3 class="align-items-lg-baseline text-capitalize"><strong>lacrima</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>                                   
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/acmus-lacrima.jpg" alt="image musique lacrima"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                </div>
+                            </div>
+                         </div>
+                    </div>     
+                <div class="col-4">
+                    <div class="row">
+                        <article class="col-12">
+                            <img class="img-fluid mt-3 rounded-5" src="./assets/image/accueil/musique-accueil.jpg"
+                                alt="image film aquaman" width="192" height="127" style="height: auto; width: auto;">
+                        </article>
+                    </div>
+                </div>
+             </section>
+        </div>
+        <div class="container-fluid">
+            <!--Category 5 title-->
+            <section class="col-12">
+                <div class="row">
+                    <h2 class="category text-uppercase gras text-center py-2 stitre mt-3"><strong>livre</strong></h2>
+                    <!--BOOK-->
+                    <article class="col-4">
+                        <img class="img-fluid mt-3 rounded-5" src="./assets/image/accueil/livre-accueil.jpg"
+                            alt="image film aquaman" width="192" height="127" style="height: auto; width: auto;">
+                    </article>
+                    <div class="col-8">
+                        <div class="row">
+                            <!--Book section 1-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/aclivre-panorama.jpg" alt="image livre panorama"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <h3 class="align-baseline text-capitalize"><strong>panorama</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Book section 2-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/aclivre-veiller.jpg" alt="image livre veiller sur elle"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <h3 class="align-baseline text-capitalize"><strong>veiller sur elle</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Book section 3-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/aclivre-aiguilles.jpg" alt="image livre les aiguilles d'or"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <h3 class="align-baseline text-capitalize"><strong>les aiguilles d'or</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Book section 4-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/aclivre-lemage.jpg" alt="image livre le mage du kremelin"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <h3 class="align-baseline text-capitalize"><strong>le mage du kremelin</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Book section 5-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/aclivre-lajuree.jpg" alt="image livre la jurée"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <h3 class="align-baseline text-capitalize"><strong>la jurée</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Book section 6-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/aclivre-troivies.jpg" alt="image livre trois vies par semaine"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <h3 class="align-baseline text-capitalize"><strong>trois vies par semaine</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container-fluid">
+            <!--Category 6: title-->
+            <section class="col-12">
+                <div class="row">
+                    <h2 class="category text-uppercase gras text-center py-2 stitre mt-3"><strong>événement</strong></h2>
+                    <!--EVENTS-->
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <!--Event section 1-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 text-lg-end">
+                                        <h3 class="mt-2"><strong>rose festival</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid rounded-5"
+                                            src="./assets/image/accueil/acevent-rosef.jpg" alt="image événement rose festival"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Event section 2-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 text-lg-end">
+                                        <h3 class="align-baseline text-capitalize"><strong>exposition street art</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/acevent-streetart.jpg" alt="image événementexposition street art"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Event section 3-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 text-lg-end">
+                                        <h3 class="align-baseline text-capitalize"><strong>dédicace ségolène royal</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid rounded-5"
+                                            src="./assets/image/accueil/acevent-sego.jpg" alt="image événement dédicace ségolène royal"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Event section 4-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 text-lg-end">
+                                        <h3 class="align-baseline text-capitalize"><strong>les nuits courtes</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/acevent-nuitc.jpg" alt="image événement les nuits courtes"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Event section 5-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 text-lg-end">
+                                        <h3 class="text-capitalize"><strong>free music</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>                                    
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/acmus-nights.jpg" alt="image événement free music"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Event section 6-->
+                            <div class="col-6">
+                                <div class="row">
+                                    <article class="col-4 col-lg-6 text-lg-end">
+                                        <h3 class="align-items-lg-baseline text-capitalize"><strong>musicalure</strong></h3>
+                                        <p class="overflow-scroll" style="height: 60px; max-width: 300px; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint in repellat officiis cum.</p>
+                                        <p>publié le<timer>24/01/2024</timer>
+                                    </article>                                   
+                                    <article class="col-4 col-lg-6 ">
+                                        <img class="img-fluid mt-3 rounded-5"
+                                            src="./assets/image/accueil/acevent-musical.jpg" alt="image événement musicalure"
+                                            width="192" height="127" style="height: auto; width: auto;">
+                                    </article>
+                                </div>
+                            </div>
+                         </div>
+                    </div>     
+                <div class="col-4">
+                    <div class="row">
+                        <article class="col-12">
+                            <img class="img-fluid mt-3 rounded-5" src="./assets/image/accueil/event-accueil.jpg"
+                                alt="image catégorie événements" width="490" height="453" style="height: auto; width: auto;">
+                        </article>
+                    </div>
+                </div>
+             </section>
+                <!--arrow go top page-->
+                <div class="limit text-center pb-5">
+                    <a href="#"><img src="./assets/image/accueil/fleche-toppage.svg" alt="fleche retour haut de la page accueil" class=""></a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!--FOOTER PART-->
+    <footer class="footer text-center">
+        <div class="container p-4 pb-0 col-md-12">
+          <section class="mb-4">
+          <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" target="_blank" rel="noopener noreferrer" class="d-inline"><img src="./assets/image/contact/YOUTUBE.png" alt="youtube" width="42px" height="42px"></a>
+          <a href="" class="d-inline"><img src="./assets/image/contact/INSTAGRAM.png" alt="instagram" width="42px" height="42px"></a>
+          <a href="" class="d-inline"><img src="./assets/image/contact/FACEBOOK.png" alt="facebook" width="42px" height="42px"></a>
+          <a href="" class="d-inline"><img src="./assets/image/contact/MARKETPLACE.png" alt="marketplace" width="42px" height="42px"></a>
+          <a href="" class="d-inline"><img src="./assets/image/contact/PINTEREST.png" alt="pinterest" width="42px" height="42px"></a>
+          <a href="" class="d-inline"><img src="./assets/image/contact/TWITTER.png" alt="twitter" width="42px" height="42px"></a>
+        </section>
+        </div>
+        <div class="text-center pb-40">
+          <div class="text-white text-uppercase">
+            <a href=""><p class="d-inline px-3">newsletter</p></a>
+            <a href="contact.html"><p class="d-inline px-3">contact</p></a>
+            <a href=""><p class="d-inline px-3">modération</p></a>
+            <a href=""><p class="d-inline px-3">mention légale</p></a>
+            <a href=""><p class="d-inline px-3">c.g.u cookies</p></a>
+            <a href=""><p class="d-inline px-3">politique de confidentialité</p></a>
+          </div>
+        </div>
+        <div class="pb-1 text-white ps-4">
+          <p>droits légaux. dépôt....</p>
+        </div>
+      </footer>
+<!--bootsrtap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<!--font awesome-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+
+</html>

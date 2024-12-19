@@ -1,0 +1,6 @@
+:root {
+    --orange: #F4661B;
+}
+#search svg {
+    color: var(--orange);
+}

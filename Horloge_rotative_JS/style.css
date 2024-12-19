@@ -1,0 +1,46 @@
+.clock {
+    margin: 10px;
+    width: 500px;
+    height: 500px;
+    background-image: url(./horloge.png);
+    border-radius: 100%;
+    background-size: 100%;
+
+
+}
+
+.needle span {
+    transform-origin: top;
+
+}
+
+.hour {
+    height: 100px;
+    width: 8px;
+    background-color: black;
+    position: absolute;
+    transform: translate(246px, 250px) rotate(90deg);
+}
+.minute {
+    height: 120px;
+    width: 6px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    transform: translate(247px, 250px) rotate(180deg);
+}
+.seconde {
+    height: 130px;
+    width: 4px;
+    background-color: #00f604;
+    position: absolute;
+    transform: translate(248px, 250px) rotate(270deg);
+}
+
+.puce {
+    
+  height: 15px;
+  width: 15px;
+  background-color: black;
+  position: absolute;
+  transform: translate(250 px 250 px);
+}

@@ -1,0 +1,30 @@
+
+body{
+   background-image: url(./1168.jpg);
+   background-size: cover;
+
+ }
+ .game-container {
+   display: flex;
+   justify-content:left;
+   align-items : flex-end;
+
+   margin-bottom: 5px;
+ }
+
+#bip {
+   height: 200px;
+    position: relative;
+    cursor: pointer;
+   
+  }
+
+ #will {
+
+    position: relative;
+    cursor: pointer;
+    height: 200px;
+   
+    
+ } 
+

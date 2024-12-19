@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            background: linear-gradient(to right, #ff0000, #ff7300, #fffb00, #48ff00, #00ff7f, #00ffff, #0048ff, #7f00ff, #ff00ff, #ff007f);
+        }
+        div {
+            border: 5px solid teal;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            font-weight: bold; /* 600 */
+            padding: 10px;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+        #parent-container {
+            height: 400px;
+            border-color: purple;
+            position: relative;
+        }
+        span{
+            background-color: #b2b2b2;
+        }
+        #static {
+            height: 100px;
+            /*position: static;
+            background-color: #ff0000;*/
+            /* Ajouter les top, left, right, bottom : NE SERT A RIEN */
+        }
+        .absolute {
+            position: absolute;
+            border-color: red;
+            max-width: 75%;
+            bottom: 0;
+            right: 0;
+        }
+        #relatif {
+            border-color: #fffb00;
+            height: 150px;
+            position: relative;
+            /* nous avons la possibilité de déplacer cet élément grace au left, right top, bottom */
+        }
+
+        #fixed {
+            border-color: black;
+            position: fixed;
+            bottom: 0;
+            left: 0; /* pour le centre left: calc(50% - 150px); /* 50% - half of max-width */
+            margin: 0;
+            max-width: 300px;
+
+        }
+    </style>
+</head>
+<body>
+<h1>CSS position DEMO</h1>
+
+    <div id="parent-container">
+        Je suis l'ancetre de toutes les boite à l'interieur de moi.
+        De plus, je suis positionné en <span>relatif</span>.
+        Qu'est-ce qui serai différent si je suis positionné en <span>statique</span>?
+
+        <div id="static"> <!-- on peut aussi mettre relative -->
+            la possition de cette boite est <span>statique</span>.
+            Il est positionné par rapport à son parent. ( #parent-container ).
+            cette element est non positionné.
+
+            <div class="absolute">
+                Ce <span>élément positionné absolument</span> s'est <i>échappé</i> de son élément parent <span>statique</span>.</br>
+                Il est maintenant positionné par rapport à son ancêtre <span>relatif</span> le plus proche.
+            </div>
+        </div>
+
+        <div id="relatif">
+            La position <span>relative</span> signifie que l'élément est positionné par rapport à lui-même. Sans utiliser les propriétés top, right, bottom ou left,
+            il se comporte comme un élément statique. Essayez d'ajouter des propriétés pour déplacer cet élément!
+            <div class="absolute">
+                Ce <span>élément positionné absolument</span> est positionné par rapport à son ancêtre <span>relatif</span>.
+            </div>
+        </div>
+
+        <div id="fixed">
+            le positionnement fixe signifie que je suis positionné par rapport à la fenêtre du navigateur, c'est-à-dire la fenêtre d'affichage. Même si vous faites défiler, je serai là.
+            PS - informations supplémentaires dans le HTML
+        </div>
+    </div>
+</body>
+</html>

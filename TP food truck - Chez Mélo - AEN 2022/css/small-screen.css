@@ -1,0 +1,194 @@
+@media only screen and (max-width: 1000px) {
+    
+    body, #head-nav, section, #main-img, footer {
+        width: 100%;
+    }
+
+/* HEADER-NAV */
+
+header {
+    width: 100%;
+}
+
+header h1 {
+   /* visibility: hidden; */
+    font-size : 2.5rem; 
+}
+
+#logo-camion {
+    margin: 25px 0 0 0;
+    max-height: 80px; 
+    padding: 0; 
+}
+
+
+/* HOME */
+
+#redirection-cases {
+    flex-wrap: wrap;
+}
+
+#redirection-presentation, #redirection-menu, #redirection-contact {
+    margin: 40px 0;
+    
+}
+
+#redirection-cases a {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+#lieux {
+    margin: 10px 30px;
+}
+
+iframe {
+    max-width: 100%;
+}
+/* PRESENTATION */
+
+#presentation-section
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#presentation-img, #menus-img, #contact-img{
+    display: none;
+}
+
+/* MENU */
+
+
+
+/* CONTACT */
+
+
+
+/* FOOTER */
+footer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: fit-content;
+}
+
+footer iframe {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+}
+
+@media only screen and (max-width: 600px){
+
+    
+/* NAV-HEADER */
+
+    #logo-camion {
+        max-height: 60px;
+        margin: 10px 0 0 0;
+    }
+
+    #head-nav {
+        height: 120px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    header {
+        justify-content: center;
+        width: 100%;
+    
+    }
+
+    header h1 {
+        font-size: 2rem;
+        margin: 0;
+        padding-top: 17px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav a{
+        height: 50px;
+        padding: 5px 10px;
+        font-size: 1.3rem;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+
+    /* MENU */
+
+    .article-menu {
+        width: 100%;
+        padding: 0;
+    }
+    
+    #menu-formules {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu-formules p {
+        padding: 0 10px;
+    }
+
+    .formules img
+    {
+        height: 200px;
+        border-radius: 20px ;
+    }
+
+    .formules {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        max-width: 200px;
+        align-items: center;
+        padding-bottom: 5px;
+    }
+
+    .menu-seuls {
+        width: 100%;
+        margin: 30px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* CONTACT */
+
+    form {
+        margin: 0;
+        width: 100%;
+    }
+
+    #article-contact {
+        margin: 30px;
+        width: 100%;
+    }
+
+    label {
+        width: 130px;
+        font-size: 1.2rem;
+        margin: 10px 0 0 0;
+    }
+
+    input {
+        width: 150px;
+    }
+
+    textarea {
+        width: 100%;
+    } 
+
+}

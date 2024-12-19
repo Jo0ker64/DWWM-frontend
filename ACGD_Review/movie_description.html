@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Movie Description</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/css/movie_description.css">
+	<link rel="icon" href="./assets/image/ar48px.png" type="x-icon">
+	<link rel="shortcut-icon" href="./assets/image/ar48px.png" type="x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@100;300;900;700&display=swap" rel="stylesheet">
+	<!-- v Get CDN Font-Awesome v -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+	<!-- Header -->
+	<header class="container-fluid sticky-top px-3" style="background-color: var(--dark-grey);">
+		<div class="row">
+			<nav class="navbar navbar-expand-lg">
+				<a class="navbar-brand mx-3 " href="index.html">
+					<img src="./assets/image/areview-header.png">
+				</a>
+
+				<!--  -->
+				<button 
+					id="category_button"
+					class="navbar-toggler" 
+					type="button"
+					data-bs-toggle="collapse" 
+					data-bs-target="#navbarSupportedContent" 
+					aria-controls="navbarSupportedContent" 
+					aria-expanded="false" 
+					aria-label="Toggle navigation">
+					<span id="category_button_icon" class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse mx-2" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+						<li class="nav-item  px-4">
+							<a class="nav-link text-white gras text-uppercase" href="movies.html">
+								cinéma
+							</a>
+						</li>
+						<li class="nav-item px-4">
+							<a class="nav-link text-white gras text-uppercase" href="series.html">
+								séries
+							</a>
+						</li>
+						<li class="nav-item px-4">
+							<a class="nav-link text-white gras text-uppercase" href="video_game.html">
+								gaming
+							</a>
+						</li>
+						<li class="nav-item px-4">
+							<a class="nav-link text-white gras text-uppercase" href="music.html">
+								musique
+							</a>
+						</li>
+						<li class="nav-item px-4">
+							<a class="nav-link text-white gras text-uppercase" href="book.html">
+								livre
+							</a>
+						</li>
+						<li class="nav-item px-4">
+							<a class="nav-link text-white gras text-uppercase" href="evenement.html">
+								événements
+							</a>
+						</li>
+					</ul>
+
+					<!-- search button -->
+					<form class="d-flex" role="search" id="search">
+						<input class="form-control me-2 thin" 
+							type="search" 
+							placeholder="Rechercher" 
+							aria-label="Search">
+						<a class="btn" href="news_feed.html" role="button"> 
+							<i class="fa-solid fa-magnifying-glass" style="height: 25px;width: 25px;"></i>
+						</a>
+					</form>
+
+					<!-- user button -->
+					<div id="user">
+						<i class="fa-solid fa-user" 
+							style="height: 25px; width: 25px;" 
+							type="button" 
+							data-bs-toggle="offcanvas" 
+							data-bs-target="#offcanvasWithBothOptions" 
+							aria-controls="offcanvasWithBothOptions" >
+						</i>
+					</div>
+
+				</div>
+			</nav>
+				<div class="offcanvas offcanvas-end " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+					<div class="offcanvas-header ">
+					<h5 class="offcanvas-title " id="offcanvasWithBothOptionsLabel">Se connecter</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"> </button>
+					</div>
+					<div class="offcanvas-body">
+						<div class="input-group my-1" id="Pseudo">
+						<span class="input-group-text " id="logo_pseudo">
+							<i class="fa-solid fa-user"></i>
+						</span>
+							<div class="col-sm ">
+							<input type="text" class="form-control" placeholder="Pseudo / email" aria-label="Login" aria-describedby="addon-wrapping">
+							</div>
+						</div>
+					<div class="input-group my-1" id="password">
+						<span class="input-group-text " id="logo_cadenas">
+						<i class="fa-solid fa-lock"></i>
+						</span>
+						<div class="col-sm ">
+							<input type="password" class="form-control" placeholder="Mot de passe" aria-label="Login" aria-describedby="addon-wrapping">
+						</div>
+					</div>
+					<div class="row my-1" >
+						<div class="form-check ms-2 text-start">
+						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+							Se souvenir de moi
+							</label>
+						</div>              
+					</div>
+					<div class="row my-1 text-center">
+						<a href=""> Mot de passe oublié ?</a>
+					</div>
+					<div class="row mt-3 text-center">
+						<a href="account.html">
+							<button  class="btn" type="submit" id="bouton_orange"> Se connecter </button>
+						</a>
+					</div>
+					<div class="row my-1 text-center"> 
+						<p>Vous n'avez pas encore de compte ? <br> Rejoignez-nous !</p>
+						<a href="login.html">
+							<button  class="btn" type="submit" id="bouton_orange">  S'inscrire </button>
+						</a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<!-- Website content -->
+	<main class="px-80 py-40">
+
+		<!-- Movie Title & quick description -->
+		<section id="titre_film" class="px-48">
+			<h1 class="gras text_blue">The Thing</h1>
+			<p class="bold"> 1h49 - Horreur, Mystère, Science-Fiction </p>
+		</section>
+
+		<!-- Movie informations navigation tabs -->
+		<ul class="nav nav-tabs nav-justified link_dark_grey">
+			<li class="nav-item">
+				<a id="tabHome"
+					class="nav-link active" 
+					onclick="return showTab('tabHome');" 
+					href="#titre_film">Résumé</a>
+			</li>
+			<li class="nav-item">
+				<a id="tabCasting"
+					class="nav-link" 
+					onclick="return showTab('tabCasting');" 
+					href="#titre_film">Casting</a>
+			</li>
+			<li class="nav-item">
+				<a id="tabTrailer"
+					class="nav-link" 
+					onclick="return showTab('tabTrailer');" 
+					href="#titre_film">Bandes-Annonces</a>
+			</li>
+			<li class="nav-item">
+				<a id="tabViewers"
+					class="nav-link" 
+					onclick="return showTab('tabViewers');" 
+					href="#titre_film">Spectateurs</a>
+			</li>
+			<li class="nav-item">
+				<a id="tabPress"
+					class="nav-link" 
+					onclick="return showTab('tabPress');" 
+					href="#titre_film">Presse</a>
+			</li>
+			<li class="nav-item">
+				<a id="tabDistrib"
+					class="nav-link" 
+					onclick="return showTab('tabDistrib');" 
+					href="#titre_film">Dstribution</a>
+			</li>
+		</ul>
+
+		<!-- The home frame chunk -->
+		<div id="frameHome" class="main_frame" style="display: block;">
+
+			<!-- Image & Trailer chunk -->
+			<section id="image_BA" class="px-48 py-48">
+				<div>
+					<img src="assets/image/movie_description/theThing445x700.png" width="100%">
+				</div>
+				<div class="container">
+					<!-- <img src="https://placehold.co/1154x700" width="100%" class="pl-48"> -->
+					<iframe width="100%" height="100%"
+						allowfullscreen
+						src="https://www.youtube.com/embed/5ftmr17M-a4">
+					</iframe>
+				</div>
+			</section>
+
+			<!-- Infos chunk -->
+			<div class="px-48">
+				<hr/>
+				<div class="px-232 py-48">
+
+					<!-- Note & Star chunk -->
+					<section id="note">
+						<div id="star">
+							<a class="bold" href="#notreavis">
+								<i class="fa-solid fa-star"></i>
+								<h1 class="bold text_blue">5 / 5</h1>
+							</a>
+						</div>
+					</section>
+					<hr/>
+
+					<section id="synopsis">
+						<h4 class="bold text_blue">Synopsis :</h4>
+						<p>
+							Une équipe de chercheurs en Antarctique est chassée par 
+							une étrange créature capable d'imiter ses victimes. 
+							Mais qui peut bien être "la chose" ?
+						</p>
+					</section>
+					<hr/>
+
+					<section id="notreavis">
+						<h4 class="bold text_blue">Notre Avis :</h4>
+						<p>
+							Un huis clos dans une base scientifique perdue au milieu 
+							de l'antarctique, John Carpenter nous montre une fois de plus, 
+							dans ce slasher unique en son genre, qu'il est le maître 
+							incontesté de l'horreur. Des effets spéciaux qui n'ont pas 
+							viellit, un minimalisme dont le maître nous a habitué, 
+							des acteurs époustouflants et un suspence insoutenable vous 
+							attendront dans "The Thing", le chef-d'œuvre de John Carpenter.
+						</p>
+					</section>
+					<hr/>
+
+					<section id="infosup">
+						<!-- The short infos & casting table -->
+						<h4 class="bold text_blue">Informations supplémentaires :</h4>
+						<table class="table table-sm table-striped table-hover">
+							<thread>
+								<tr>
+									<th scope="row">Année</th>
+									<th>1982</th>
+								</tr>
+							</thread>
+							<thread>
+								<tr>
+									<th scope="row">Réalisation</th>
+									<th>John Carpenter</th>
+								</tr>
+							</thread>
+							<thread>
+								<tr>
+									<th scope="row">Scénario</th>
+									<th>Bill Lancaster, John W. Campbell Jr.</th>
+								</tr>
+							</thread>
+							<thread>
+								<tr>
+									<th scope="row">Acteurs</th>
+									<th>
+										Kurt Russel, Keith David, Wilford Brimley, Richard Masur, 
+										T.K. Carter, David Clennon, Richard Dysart, Charles Hallahan, 
+										Peter Maloney, Donald Moffat, Joel Polis, Thomas G. Waites, 
+										Norbert Weisser, Larry Franco, Nate Irwin, William Zeman, 
+										Adrienne Barbeau, John Carpenter
+									</th>
+								</tr>
+							</thread>
+							<thread>
+								<tr>
+									<th scope="row">Musique</th>
+									<th>Ennio Moriconne</th>
+								</tr>
+							</thread>
+							<thread>
+								<tr>
+									<th scope="row">Production</th>
+									<th>
+										Stuart Cohen, David Foster, Larry Franco, 
+										Wilbur Stark, Lawrence Turman
+									</th>
+								</tr>
+							</thread>
+						</table>
+					</section>
+				</div>
+				<hr/>
+
+				<!-- The Comments chunk -->
+				<section id="commentaires" class="pb-40">
+					<h4 class="bold text_blue">Commentaires :</h4>
+					<form>
+						<!--<input type="text" 
+							id="enterComment" 
+							name="enterComment" 
+							placeholder="Entrez un commentaire ..."
+							spellcheck="true"
+							class="comment_frame"/>-->
+							<textarea 
+								id="enterComment" 
+								name="enterComment"
+								placeholder="Entrez un commentaire ..."
+								class="input comment_frame"></textarea>
+					</form>
+					<hr/>
+					<!-- Comment -->
+					<div id="comment" class="comment_frame gap-4 pt-40">
+						<div id="comment_profile_field">
+							<img src="https://placehold.co/45x45/000000/FFFFFF" alt="profile picture" id="profile_picture">
+							<p> H.P. Lovecraft </p>
+						</div>
+						<div class="vl"></div>
+						<div class="text_wrap">
+							Super !
+						</div>
+					</div>
+					<hr/>
+					<div id="comment" class="comment_frame gap-4 pt-40">
+						<div id="comment_profile_field">
+							<img src="https://placehold.co/45x45/000000/FFFFFF" alt="profile picture" id="profile_picture">
+							<p> Howard Hawks </p>
+						</div>
+						<div class="vl"></div>
+						<div class="text_wrap">
+							rgjeogj eoithj rohijrohtijroihtjroihjt ortjhoir jtohijrohtij orijht roihjt rtijh roithj roi tjhrotihj roithjr oitjh ijh rotihj rotihjrotihjrt iohjrthioj rot ihjrthoijr oihjt oijh rojtih rotihj ronhrtinhro rgjeogj eoithj rohijrohtijroihtjroihjt ortjhoir jtohijrohtij orijht roihjt rtijh roithj roi tjhrotihj roithjr oitjh ijh rotihj rotihjrotihjrt iohjrthioj rot ihjrthoijr oihjt oijh rojtih rotihj ronhrtinhro rgjeogj eoithj rohijrohtijroihtjroihjt ortjhoir jtohijrohtij orijht roihjt rtijh roithj roi tjhrotihj roithjr oitjh ijh rotihj rotihjrotihjrt iohjrthioj rot ihjrthoijr oihjt oijh rojtih rotihj ronhrtinhro rgjeogj eoithj rohijrohtijroihtjroihjt ortjhoir jtohijrohtij orijht roihjt rtijh roithj roi tjhrotihj roithjr oitjh ijh rotihj rotihjrotihjrt iohjrthioj rot ihjrthoijr oihjt oijh rojtih rotihj ronhrtinhro rgjeogj eoithj rohijrohtijroihtjroihjt ortjhoir jtohijrohtij orijht roihjt rtijh roithj roi tjhrotihj roithjr oitjh ijh rotihj rotihjrotihjrt iohjrthioj rot ihjrthoijr oihjt oijh rojtih rotihj ronhrtinhro 
+						</div>
+					</div>
+
+				</section>
+
+			</div>
+		</div>
+
+		<!-- The casting frame chunk -->
+		<div id="frameCasting" class="main_frame py-40 px-48" style="display: none;">
+			<h2 class="bold text_blue">Casting</h2>
+			<hr/>
+			<table class="table table-sm table-striped table-hover">
+				<thread>
+					<tr><th scope="row" class="gras"><a>Réalisation</a></th></tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">John Carpenter</a></th>
+						<th class="thin">Réalisateur</th>
+					</tr>
+					<tr><th scope="row" class="gras"><a>Scénario</a></th></tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Bill Lancaster</a></th>
+						<th class="thin">Scénario</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">John W. Campbell Jr.</a></th>
+						<th class="thin">Histoire originale : "Who Goes There ?"</th>
+					</tr>
+					<tr><th scope="row" class="gras"><a>Acteurs crédités</a></th></tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Kurt Russel</a></th>
+						<th class="thin">MacReady</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Wilfrid Brimley</a></th>
+						<th class="thin">Dr. Blair</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">T.K. Carter</a></th>
+						<th class="thin">Nauls</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">David Clennon</a></th>
+						<th class="thin">Palmer</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Keith David</a></th>
+						<th class="thin">Childs</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Richard Dysart</a></th>
+						<th class="thin">Dr. Copper</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Charles Hallahan</a></th>
+						<th class="thin">Vance Norris</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">George Bennings</a></th>
+						<th class="thin">Peter Maloney</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Richard Masur</a></th>
+						<th class="thin">Clark</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Donald Moffat</a></th>
+						<th class="thin">Garry</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Joel Polis</a></th>
+						<th class="thin">Fuchs</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Thomas G. Waites</a></th>
+						<th class="thin">Peter Windows</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Norbert Weisser</a></th>
+						<th class="thin">Norvégien</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Larry Franco</a></th>
+						<th class="thin">Passager norvégien armé</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Nate Irwin</a></th>
+						<th class="thin">Pilote d'hélicoptère</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">William Zeman</a></th>
+						<th class="thin">Pilote</th>
+					</tr>
+					<tr><th scope="row" class="gras"><a>Acteurs(rices) non-crédités(ées)</a></th></tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Adrienne Barbeau</a></th>
+						<th class="thin">Voix ordinateur, non-créditée</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">John Carpenter</a></th>
+						<th class="thin">Enregistrement vidéo norvégien, non-crédité</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Jed</a></th>
+						<th class="thin">La chose en chien, non-crédité</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Bill Lancaster</a></th>
+						<th class="thin">Enregistrement vidéo norvégien, non-crédité</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Dick Warlock</a></th>
+						<th class="thin">Enregistrement vidéo norvégien, non-crédité</th>
+					</tr>
+					<tr><th scope="row" class="gras"><a>Production</a></th></tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Stuart Cohen</a></th>
+						<th class="thin">Co-producteur</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">David Foster</a></th>
+						<th class="thin">Producteur</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Larry Franco</a></th>
+						<th class="thin">Producteur associé</th>
+					</tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Wilbur Stark</a></th>
+						<th class="thin">Producteur associé</th>
+					</tr>
+					<tr><th scope="row" class="gras"><a>Musique</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Ennio Morricone</a></th></tr>
+					<tr><th scope="row" class="gras"><a>Photographie</a></th></tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Dean Cundey</a></th>
+						<th class="thin">Directeur photographie</th>
+					</tr>
+					<tr><th scope="row" class="gras"><a>Montage</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Todd C. Ramsay</a></th></tr>
+					<tr><th scope="row" class="gras"><a>Casting</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Anita Dann</a></th></tr>
+					<tr><th scope="row" class="gras"><a>Production design</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">John J. Lloyd</a></th></tr>
+					<tr><th scope="row" class="gras"><a>Direction Artistique</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Henry Larrecq</a></th></tr>
+					<tr><th scope="row" class="gras"><a>Décoration</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">John M. Dwyer</a></th></tr>
+					<tr><th scope="row" class="gras"><a>Maquillage et effets spéciaux</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Lance Anderson</a></th></tr>
+					<tr>
+						<th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Rob Bottin</a></th>
+						<th class="thin">Créateur et designer des effets spéciaux</th>
+					</tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Dale Brady</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Rob Burman</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">David Robert Celliti</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Don Chandler</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Ken Chase</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Robert Cole</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Jan Cook</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">James Cummins</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Richard Davison</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Ken Diaz</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Gunnar Ferdinandsen</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Frank Foster</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Danny Gill</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Archie L. Gillet</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Tim Gillet</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">John Goodwin</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Erik Jensen</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">James Kagel</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Jeff Kennemore</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Phyllis Newman</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Derek O'Reilly</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Art Pimentel</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Margaret Prentice</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Vincent Prentice</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">William Snyder</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Michiko Tagawa</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Josephine Turner</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Brian Wade</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Vivienne Walker</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Willie Whitten</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Robert K. Worthington</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Lynn F. Reynolds</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Bill Sturgeon</a></th></tr>
+					<tr><th scope="row" class="bold"><a href="celebrity.html" class="text_blue">Stan Winston</a></th></tr>
+
+				</thread>
+			</table>
+		</div>
+
+		<!-- The trailer frame chunk -->
+		<div id="frameTrailer" class="main_frame py-40 px-48" style="display: none;">
+			<h2 class="bold text_blue">Bandes-Annonces</h2>
+			<div class="container" >
+				<iframe width="100%" height="700px"
+					allowfullscreen
+					src="https://www.youtube.com/embed/5ftmr17M-a4">
+				</iframe>
+			</div>
+		</div>
+
+		<!-- The viewers frame chunk -->
+		<div id="frameViewers" class="main_frame py-40 px-48" style="display: none;">
+			<h2 class="bold text_blue">L'avis des spectateurs</h2>
+		</div>
+
+		<!-- The press frame chunk -->
+		<div id="framePress" class="main_frame py-40 px-48" style="display: none;">
+			<h2 class="bold text_blue">L'avis de la presse</h2>
+
+		</div>
+
+		<!-- The distribution frame chunk -->
+		<div id="frameDistrib" class="main_frame py-40 px-48" style="display: none;">
+			<h2 class="bold text_blue">Streaming</h2>
+			
+			<img class="round-stream-image" src="https://fr.web.img4.acsta.net/commons/v9/common/svod_providers/square-paramountplus.svg" alt="Paramount+ logo" width="60" height="60">
+		</div>
+	</main>
+
+
+	<!-- The Footer -->
+	<div id="container">
+		<div id="main">
+			<div id="footer">
+				<footer class="bg_grey">
+
+					<!-- Link Icons -->
+					<div class="text-center py-40">
+						<a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" target="_blank" rel="noopener noreferrer" class="d-inline"><img src="./assets/image/contact/YOUTUBE.png" alt="youtube" width="42px" height="42px"></a>
+						<a href="" class="d-inline"><img src="./assets/image/contact/INSTAGRAM.png" alt="instagram" width="42px" height="42px"></a>
+						<a href="" class="d-inline"><img src="./assets/image/contact/FACEBOOK.png" alt="facebook" width="42px" height="42px"></a>
+						<a href="" class="d-inline"><img src="./assets/image/contact/MARKETPLACE.png" alt="marketplace" width="42px" height="42px"></a>
+						<a href="" class="d-inline"><img src="./assets/image/contact/PINTEREST.png" alt="pinterest" width="42px" height="42px"></a>
+						<a href="" class="d-inline"><img src="./assets/image/contact/TWITTER.png" alt="twitter" width="42px" height="42px"></a>
+					</div>
+
+					<div class="text-center pb-40">
+						<div class="text-white text-uppercase link_white">
+							<a href=""><p class="d-inline px-3">newsletter</p></a>
+							<a href="contact.html"><p class="d-inline px-3">contact</p></a>
+							<a href=""><p class="d-inline px-3">modération</p></a>
+							<a href=""><p class="d-inline px-3">mention légale</p></a>
+							<a href=""><p class="d-inline px-3">c.g.u cookies</p></a>
+							<a href=""><p class="d-inline px-3">politique de confidentialité</p></a>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		// This script allow switching between tabs by showing and hiding category frames
+		function showTab( currentTab )
+		{
+			const tabsID = ["tabHome","tabCasting","tabTrailer","tabViewers","tabPress","tabDistrib"];
+			const framesID = ["frameHome","frameCasting","frameTrailer","frameViewers","framePress","frameDistrib"];
+			let fID = 0;
+
+			for( let i = 0; i<tabsID.length; i++ )
+			{
+				// Hide all tabs
+				document.getElementById( tabsID[i] ).className = 
+					document.getElementById( tabsID[i] ).className.replace( /(?:^|\s)active(?!\S)/g, '' );
+				document.getElementById( framesID[i] ).style.display="none";
+				
+				if( currentTab == tabsID[i] )
+					fID = i;
+			}
+
+			// Show selected tab
+			document.getElementById( currentTab ).className += " active";
+			document.getElementById( framesID[fID] ).style.display="block";
+
+			return 0;
+		}
+	</script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+</body>
+</html>

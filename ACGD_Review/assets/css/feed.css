@@ -1,0 +1,122 @@
+:root {
+    --orange: #f4661b;
+    --gris: #434343;
+    --gris2: #D9D9D9;
+    --gris3: #A7A7A7;
+    --bleu: #1BB5B0;
+    --noir: #000000;
+    --white: #ffffff;
+
+}
+/* en mettant # avant search lorque j'appelle search il est automatiquement en orange */
+#search svg {
+    color: var(--orange);
+    display:block;
+    margin:auto;
+}
+#logo {
+    padding-left: 50px;
+}
+/* bg est le nom avec lequel la variable gris doit etre appeler dans le code html */
+.bg-gris {
+    background-color: var(--gris);
+}
+.bg-gris2 {
+    background-color: var(--gris2);
+}
+.bg-gris3 {
+    background-color: var(--gris3);
+}
+.bg-bleu {
+    background-color: var(--bleu);
+}
+.bg--noir {
+    background-color: var(--noir);
+}
+.bg-white {
+    background-color: var(--white);
+}
+#navbarNavAltMarkup {
+    justify-content: center;
+}
+
+#user svg{
+    color: var(--orange)
+} 
+#bouton_orange {
+    background-color: #f4661b; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 18px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    cursor: pointer;
+    outline: none;
+}
+.navbar-nav {
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    margin-left: 0; 
+    margin-right: 0; 
+  }
+  .navbar-toggler {
+    margin-left: auto; 
+  }
+  *{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300; }
+    .bold{
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 700; 
+    }
+    .light{
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 300; 
+    }
+    .gras{
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 900; 
+    }
+    
+    .thin{
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 100; 
+    }
+    h1{
+        color: var(--orange);
+        text-align: center;
+        font-size: 60px;
+        font-family: 'Noto Sans', sans-serif;
+    }
+    p1{
+        font-family: 'Noto Sans', sans-serif;  
+        font-size: 20px;
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+       }
+       .py-20{
+        padding-top: 20px;
+        padding-bottom: 20px;
+       }
+       .ban{
+        width: 100%;
+        height: 150;
+       }
+       h3{
+        color: var(--bleu);
+        font-family: 'Noto Sans', sans-serif;
+        vertical-align: top;
+        font-size: 50px;
+       } h4{
+        color: var(--orange);
+        font-size: 40px;
+        font-family: 'Noto Sans', sans-serif;
+       }
+       p{
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 30px;
+       }

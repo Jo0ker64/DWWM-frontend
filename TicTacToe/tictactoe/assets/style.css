@@ -1,0 +1,68 @@
+:root {
+    --color-grey: #cccccc;
+    --color-dark-grey: #888888;
+    --cross-cell: #ff8888;
+    --circle-cell: #88aaff;
+    --triangle-cell: #88ff88;
+    --square-cell: #ffbb88;
+}
+
+#playArea {
+    display: flex;
+    margin: auto;
+}
+
+.background {
+    background-color: var(--cross-cell);
+}
+
+.frow {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.fcol {
+    display: flex;
+    flex-direction: column;
+}
+
+.void-cell {
+    background-color: var(--color-grey);
+    border: 1px solid var(--color-dark-grey);
+    width: 64px;
+    height: 64px;
+}
+
+.cross-cell {
+    background-color: var(--cross-cell);
+    border: 1px solid var(--color-dark-grey);
+    width: 64px;
+    height: 64px;
+}
+
+.circle-cell {
+    background-color: var(--circle-cell);
+    border: 1px solid var(--color-dark-grey);
+    width: 64px;
+    height: 64px;
+}
+
+.triangle-cell {
+    background-color: var(--triangle-cell);
+    border: 1px solid var(--color-dark-grey);
+    width: 64px;
+    height: 64px;
+}
+
+.square-cell {
+    background-color: var(--square-cell);
+    border: 1px solid var(--color-dark-grey);
+    width: 64px;
+    height: 64px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}

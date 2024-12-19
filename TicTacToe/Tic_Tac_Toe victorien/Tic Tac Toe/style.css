@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(32, 32, 32);
+    background-image: url(./asset/black-chalk.jpg);
+     text-align: center;
+}
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 150px;
+  } 
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    border: 3px solid rgb(255, 255, 255);
+  }
+#reset {
+    color: rgb(136, 5, 5);
+    font-weight: bold;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    border: solid black;
+    background-color: rgb(169, 169, 169);
+    text-align: center;
+    display: inline-block;
+    transition-duration: 0,5s;
+    cursor: pointer;
+    font-family: 'Indie Flower', 'Comic Sans', cursive;
+    text-transform: uppercase;
+}
+#reset:hover {
+    color: rgb(8, 133, 4);
+    transition-duration: 0,5s;
+    border: 2px solid rgb(0, 0, 0);
+}
+.x {
+    color: darksalmon;
+    font-size: 80px;
+    text-transform: uppercase;
+  }
+  
+.o {
+    color: aquamarine;
+    font-size: 80px;
+    text-transform: uppercase;
+  }
+  
+.win {
+    background-color: rgba(107, 107, 107, 50);
+  }
+.container {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  

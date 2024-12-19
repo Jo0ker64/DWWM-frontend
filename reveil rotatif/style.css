@@ -1,0 +1,94 @@
+body {
+  background-image: url(./bed.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  }
+  
+  #container {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 30px;
+    transform: rotate(0deg);
+    transform-origin: 50% bottom;
+  }
+  
+  .declencheur {
+    animation: zig_zag 200ms infinite;
+  }
+  
+  @keyframes zig_zag {
+    25% {
+      transform: rotate(5deg);
+    }
+  
+    75% {
+      transform: rotate(-5deg);
+    }
+  }
+  
+  #canvas {
+    margin: 150px 50px;
+    transform: rotate(0deg);
+    transform-origin: 50% bottom;
+    transition: transform 200ms 200ms;
+  }
+
+ 
+
+  #hourHand{
+    position: absolute;
+    height: 3%;
+    width: 4px;
+    background-color: #000;
+    top: 26%;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+    left: 50%;
+    transform-origin: 50% 100%;
+}
+
+#minuteHand{
+  position: absolute;
+  height: 5%;
+  width: 4px;
+  background-color: #000;
+  top: 24%;
+  transform-origin: bottom;
+  transform: rotate(0deg);
+  left: 50%;
+  transform-origin: 50% 100%;
+}
+
+#secondHand{
+  position: absolute;
+    height: 5%;
+    width: 2px;
+    background-color: #ff0000;
+    top: 24%;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+    left: 50%;
+    transform-origin: 50% 100%;
+}
+
+
+  button {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .btn {
+    text-align: center;
+    margin-bottom: 200px;
+  }
+

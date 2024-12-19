@@ -1,0 +1,175 @@
+/*css HOME PAGE Areview*/
+
+/*GENERAL STYLE OF THE PAGE Areview*/
+:root {
+  --orange: #F4661B;
+  --white: #D9D9D9;
+  --grey: #434343;
+  --blue: #1BB5B0;
+  --police: "noto sans" sans-serif;
+}
+.pt-200 {
+  padding-top: 200px !important;
+}
+
+.pt-230 {
+  padding-top: 230px !important;
+}
+
+.pt-100 {
+  padding-top: 100px !important;
+}
+
+.px-14 {
+  padding-left: 14rem !important;
+  padding-right: 14rem !important;
+}
+
+.bg-grey {
+  background-color: #434343;
+}
+
+.headersize {
+  max-width: 2500px;
+  display: inline-flexbox;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.ps-240 {
+  padding-left:15rem!important
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.gras  {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 900;
+}
+
+.light {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 300;
+}
+
+.bold {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  max-width: 2500px;
+  display: inline-flexbox;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+}
+
+/*HEADER Areview*//*LAST MODIFICATIONS*/
+
+/*MENU NAVBAR Areview*/    
+.menu {
+  color: var(--white);
+  font-family: var(--police);
+  font-weight: 700;
+}
+
+.d-inline {
+  color: var(--white);
+  font-family: var(--police);
+  font-weight: 700;
+
+}
+
+.navbar-nav .nav-item a{
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.navbar-nav .nav-item a:hover {
+  color: #f4661b;
+}
+
+.fa-user, .fa-lock,.fa-magnifying-glass{
+  color: #f4661b;
+}
+
+#search svg{
+  color: var(--orange)
+} 
+
+#user svg{
+  color: var(--orange)
+} 
+
+/*MAIN HOME PAGE Areview*/
+h1 {
+  color: var(--orange );
+  font-family: var(--police);
+  font-size: 2Opx;
+}
+
+h2 {
+  color: var(--white);
+  background-color: var(--grey);
+  font-family: var(--police);
+  font-size: 30px;
+}
+
+h3 {
+  color: var(--blue);
+  font-family: var(--police);
+  font-weight: 700;
+  font-size: 20px;
+}
+p {
+  font-family: var(--police);
+  font-weight: 300;
+  text-align: justify;
+}
+
+
+/*FOOTER*/
+.footer {
+  color: var(--white);
+  background-color: var(--grey);
+  font-family: var(--police);
+}
+
+.x_center {
+  display: flex; 
+  justify-content: center; 
+  width: 100%; 
+  margin-left: 0; 
+  margin-right: 0; 
+}
+
+#bouton_orange {
+  background-color: #f4661b; 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 18px;
+  font-weight: bold;
+  text-transform: uppercase; 
+  cursor: pointer;
+  outline: none;
+}

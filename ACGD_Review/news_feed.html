@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>fil d'actualiés</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/feed.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" > 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- création du header avec le menu -->
+  <header class="container-fluid sticky-top px-3" style="background-color: #434343;">
+    <div class="row">
+          <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand mx-3 " href="index.html"> <img src="./assets/image/areview-header.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mx-2" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+                    <li class="nav-item  px-4">
+                      <a class="nav-link text-white gras text-uppercase" href="movies.html">cinéma</a>
+                    </li>
+                    <li class="nav-item px-4">
+                      <a class="nav-link text-white gras text-uppercase" href="series.html">
+                        séries
+                      </a>
+                    </li>
+                    <li class="nav-item px-4">
+                      <a class="nav-link text-white gras text-uppercase" href="video_game.html">
+                        gaming
+                      </a>
+                    </li>
+                    <li class="nav-item px-4">
+                      <a class="nav-link text-white gras text-uppercase" href="music.html">
+                        musique
+                      </a>
+                    </li>
+                    <li class="nav-item px-4">
+                      <a class="nav-link text-white gras text-uppercase" href="book.html">
+                        livre
+                      </a>
+                    </li>
+                    <li class="nav-item px-4">
+                      <a class="nav-link text-white gras text-uppercase" href="evenement.html">
+                        événements
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- search button -->
+                  <form class="d-flex" role="search" id="search">
+                    <input class="form-control me-2 thin" type="search" placeholder="Search" aria-label="Search">
+                    <a class="btn" href="news_feed.html" role="button"> <i class="fa-solid fa-magnifying-glass" style="height: 25px;width: 25px;"></i></a>
+                  </form>
+                  <div id="user">
+                  <i class="fa-solid fa-user"  style="height: 25px; width: 25px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" ></i>
+                  </div>
+                </div>
+            </nav>
+                <div class="offcanvas offcanvas-end " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                  <div class="offcanvas-header ">
+                  <h5 class="offcanvas-title " id="offcanvasWithBothOptionsLabel">Se connecter</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"> </button>
+                  </div>
+                  <div class="offcanvas-body">
+                      <div class="input-group my-1" id="Pseudo">
+                        <span class="input-group-text " id="logo_pseudo">
+                          <i class="fa-solid fa-user"></i>
+                        </span>
+                          <div class="col-sm ">
+                            <input type="text" class="form-control" placeholder="Pseudo / email" aria-label="Login" aria-describedby="addon-wrapping">
+                          </div>
+                      </div>
+                    <div class="input-group my-1" id="password">
+                      <span class="input-group-text " id="logo_cadenas">
+                        <i class="fa-solid fa-lock"></i>
+                      </span>
+                        <div class="col-sm ">
+                          <input type="password" class="form-control" placeholder="Mot de passe" aria-label="Login" aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+                    <div class="row my-1" >
+                      <div class="form-check ms-2 text-start">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Se souvenir de moi
+                          </label>
+                      </div>              
+                    </div>
+                    <div class="row my-1 text-center">
+                      <a href=""> Mot de passe oublié ?</a>
+                    </div>
+                    <div class="row mt-3 text-center">
+                      <a href="account.html"><button  class="btn" type="submit" id="bouton_orange">  Se connecter </button> </a>
+                    </div>
+                    <div class="row my-1 text-center"> 
+                      <p>Vous n'avez pas encore de compte ? <br> Rejoignez-nous !</p>
+                      <a href="login.html"><button  class="btn" type="submit" id="bouton_orange">  S'inscrire </button> </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+      </div>
+  </header>
+  
+  <div class="fluid-container">
+    <div class="row">
+      <!--row c'est pour crée une ligne-->
+      <div class="col-12">
+        <img src="./assets/image/news_feed/one-piece.jpg" alt="slider" width="100%" height="305" class="img-fluid">
+      </div>
+      <!--déclarer une div cela crée un bloc-->
+    </div>
+  </div>
+  <div>
+    <h1>fil d'actualiés</h1>
+  </div>
+  <div>
+    <h2 class="text-uppercase bold text-center titre text-white py-2 bg-gris">les nouvelle à ne pas manquer</h2>
+  </div>
+          <div class=“box“>
+              <!--<div class="row" n'était pas nessecaire la flex-box est suffisante>-->
+                <div style="display:inline-block;"class="col-3 children py-20">
+                  <img src="./assets/image/news_feed/golden globe.png" class="rounded-4 img-fluid" style="height: 400px; width: 600px;" alt="golden globe">
+                </div>
+                <div style="display:inline-block;">
+                  <h3 class="vertical-align:top">golden globe</h3>
+                  <p>
+                    Anatomie d’une chute préféré à Barbie, Oppenheimer et le cercle des Neiges
+                  </p>
+                  <h4>festival</h4>
+                </div>
+                <!--il faut que les div similaire soit aligner verticalement pour qu'elles ne s'imbrique pas les une dans les autres exemple toutes les div class= col-3 doivent etres au meme niveau-->
+                <div class="col-3 children py-20">
+                  <img src="./assets/image/news_feed/shrek.png" class="rounded-4 img-fluid" style="height: 400px; width: 600px;" alt="shrek">
+                </div>
+                <div style="display:inline-block;">
+                  <h3 class="vertical-align:top">shrek 5</h3>
+                  <p>Les acteurs sont en 
+                    négiciations pour une suite
+                  </p>
+                  <h4>cinéma</h4>
+                </div>
+                <div class="col-3 children py-20">
+                  <img src="./assets/image/news_feed/DUNE2.png" class="rounded-4 img-fluid" style="height: 400px; width: 600px;" alt="dune2">
+                </div>
+                <div style="display:inline-block;">
+                  <h3 class="vertical-align:top">dune 2</h3>
+                  <p>Au cinéma en 2024 : voici les 
+                    30 films les plus attendu! Dune 
+                    2, Furiosa, Monte Cristo...
+                  </p>
+                  <h4>cinéma</h4>
+                </div>
+                <div class="col-3 children py-20">
+                  <img src="./assets/image/news_feed/star wars outlaws.png" class="rounded-4 img-fluid" style="height: 400px; width: 600px;" alt="star wars outlaws">
+                </div>
+                <div style="display:inline-block;">
+                  <h3 class="vertical-align:top">star wars outlaws</h3>
+                  <p>Star Wars Outlaws est l’un des prochains jeux vidéo
+                     Star Wars à arriver sur nos consoles. 
+                     Un titre ambitieux et prometteur, pourtant encore bien mystérieux...
+                  </p>
+                  <h4>jeux video</h4>
+                </div>
+                <div class="col-3 children py-20">
+                  <img src="./assets/image/news_feed/san sebastian.png" class="rounded-4 img-fluid" style="height: 400px; width: 600px;" alt="san sebastian">
+                </div>
+                <div style="display:inline-block;">
+                  <h3 class="vertical-align:top">san sébastian</h3>
+                  <p>Aste Nagusia Donostia ou, en d’autres termes, 
+                    la Semana Grande de Saint-Sébastien. 
+                    Aujourd’hui, 13 août, marque le début de ...
+                  </p>
+                  <h4>festival</h4>
+                </div>
+                <div class="col-3 children py-20">
+                  <img src="./assets/image/the boys.png" class="rounded-4 img-fluid" style="height: 400px; width: 600px;" alt="the boys">
+                </div>
+                <div style="display:inline-block;">
+                  <h3 class="vertical-align:top">the boys</h3>
+                  <p>Série phare d’Amazon Prime Video, The Boys reviendra 
+                    prochainement dans un quatrième acte qui s’annonce palpitant 
+                    avec un Homelander toujours plus redoutable. Le tournage est désormais bouclé ...
+                  </p>
+                  <h4>séries</h4>
+                </div>
+          </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

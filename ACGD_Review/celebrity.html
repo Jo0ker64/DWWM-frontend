@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="assets/css/celebrity.css" rel="stylesheet">
+</head>
+<body>
+<header class="sticky-top" style="background-color: #434343;">
+    <nav class="navbar navbar-expand-xl">
+        <div class="container-fluid align-items-center">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/image/areview-header.png" alt="LOGO" width="200" height="100%">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex column-gap-2 align-items-center ms-auto order-lg-2" role="search">
+                    <input class="form-control thin" type="search" placeholder="Search" aria-label="Search">
+                    <a href="index.html"><i class="fa-solid fa-magnifying-glass" style="width: 20px;height: 100%;"></i></a>
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                            aria-controls="offcanvasWithBothOptions">
+                        <i class="fa-solid fa-user" style="width: 20px; height: 100%;"></i>
+                    </button>
+                </form>
+                <ul class="navbar-nav d-flex flex-fill text-center order-lg-1">
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link" href="movies.html">cinéma</a>
+                    </li>
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link" href="series.html">séries</a>
+                    </li>
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link" href="video_game.html">gaming</a>
+                    </li>
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link" href="music.html">musique</a>
+                    </li>
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link" href="book.html">livre</a>
+                    </li>
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link" href="evenement.html">événements</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-end " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+         aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header ">
+            <h5 class="offcanvas-title " id="offcanvasWithBothOptionsLabel">Se connecter</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"> </button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="input-group my-1" id="Pseudo">
+        <span class="input-group-text " id="logo_pseudo">
+          <i class="fa-solid fa-user" style="color: #f4661B;"></i>
+        </span>
+                <div class="col-sm ">
+                    <input type="text" class="form-control" placeholder="Pseudo / email" aria-label="Login"
+                           aria-describedby="addon-wrapping">
+                </div>
+            </div>
+            <div class="input-group my-1" id="password">
+        <span class="input-group-text " id="logo_cadenas">
+          <i class="fa-solid fa-lock" style="color: #f4661B;"></i>
+        </span>
+                <div class="col-sm ">
+                    <input type="password" class="form-control" placeholder="Mot de passe" aria-label="Login"
+                           aria-describedby="addon-wrapping">
+                </div>
+            </div>
+            <div class="row my-1">
+                <div class="form-check ms-2 text-start">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Se souvenir de moi
+                    </label>
+                </div>
+            </div>
+            <div class="row my-1 text-center">
+                <a href=""> Mot de passe oublié ?</a>
+            </div>
+            <div class="row mt-3 text-center">
+                <a href="account.html"><button class="btn" type="submit" id="bouton_orange"> Se connecter </button> </a>
+            </div>
+            <div class="row my-1 text-center">
+                <p>Vous n'avez pas encore de compte ? <br> Rejoignez-nous !</p>
+                <a href="login.html"><button class="btn" type="submit" id="bouton_orange"> S'inscrire </button> </a>
+            </div>
+        </div>
+    </div>
+</header>
+    <main>
+        <div class="celebrity-block container-fluid color-grey text-center">
+                <p class="celebrity-title bold text-start">Gérard DeuxParDeux</p>
+                <p class="celebrity-subtitle bold text-start">Acteur ・ Réalisateur</p>
+                <img src="assets/image/celebrities/gerard_deuxpardeux/picture1.png" class="celebrity-picture img-fluid" alt="Actor">
+                <img src="assets/image/celebrities/movies/fastandfurious.png" class="movie-trailer img-fluid" alt="Trailer">
+                <br>
+                <img src="assets/image/celebrities/gerard_deuxpardeux/picture2.png" class="celebrity-picture img-fluid" alt="Actor">
+                <img src="assets/image/celebrities/gerard_deuxpardeux/picture3.png" class="celebrity-picture img-fluid" alt="Actor">
+                <img src="assets/image/celebrities/gerard_deuxpardeux/picture4.png" class="celebrity-picture img-fluid" alt="Actor">
+        </div>
+        <div>
+            <div class="horizontal-orange-bar"></div>
+            <p class="categories-title bold">Connu pour</p>
+        </div>
+        <div>
+            <div class="little-movie-block">
+                <img src="assets/image/celebrities/movies/my_cam.png" alt="Movie" class="little-movie-image">
+                <p class="little-movie-title bold">Ma caméra, mon ami</p>
+                <img src="assets/image/celebrities/icons/star.png" alt="Star" class="little-movie-star">
+                <p class="little-movie-rate bold">6,6</p>
+                <p class="little-movie-categories">Mini-série télévisée</p>
+                <p class="little-movie-author">Chase Sikorsi</p>
+                <p class="little-movie-date">2021 ・ 3 épisodes.</p>
+            </div>
+            <div class="little-movie-block">
+                <img src="assets/image/celebrities/movies/drawning.png" alt="Movie" class="little-movie-image">
+                <p class="little-movie-title bold">La noyade</p>
+                <img src="assets/image/celebrities/icons/black-star.png" alt="Star" class="little-movie-star">
+                <p class="little-movie-rate bold">0</p>
+                <p class="little-movie-categories">Mini-série télévisée</p>
+                <p class="little-movie-author">Avery Watkins</p>
+                <p class="little-movie-date">2020 ・ 6 épisodes.</p>
+            </div>
+            <div class="little-movie-block">
+                <img src="assets/image/celebrities/movies/paris.png" alt="Movie" class="little-movie-image">
+                <p class="little-movie-title bold">Paris, ma ville</p>
+                <img src="assets/image/celebrities/icons/star.png" alt="Star" class="little-movie-star">
+                <p class="little-movie-rate bold">6,6</p>
+                <p class="little-movie-categories">Film</p>
+                <p class="little-movie-author">Chris</p>
+                <p class="little-movie-date">2022</p>
+            </div>
+            <div class="little-movie-block">
+                <img src="assets/image/celebrities/movies/pimp_my_ride.png" alt="Movie" class="little-movie-image">
+                <p class="little-movie-title bold">Pimp my ride</p>
+                <img src="assets/image/celebrities/icons/star.png" alt="Star" class="little-movie-star">
+                <p class="little-movie-rate bold">6,6</p>
+                <p class="little-movie-categories">Mini-série télévisée</p>
+                <p class="little-movie-author">Raj Varma</p>
+                <p class="little-movie-date">2017 ・ 1009 épisodes.</p>
+            </div>
+        </div>
+        <div>
+            <div class="vertical-orange-bar"></div>
+            <p class="categories-title2 bold">Photos</p>
+        </div>
+        <div class="picture-block">
+            <img src="assets/image/celebrities/gerard_deuxpardeux/picture1.png" class="picture-actor img-fluid" alt="Actor">
+            <img src="assets/image/celebrities/gerard_deuxpardeux/picture2.png" class="picture-actor img-fluid" alt="Actor">
+            <img src="assets/image/celebrities/gerard_deuxpardeux/picture3.png" class="picture-actor img-fluid" alt="Actor">
+            <img src="assets/image/celebrities/gerard_deuxpardeux/picture4.png" class="picture-actor img-fluid" alt="Actor">
+        </div>
+        <div>
+            <div class="vertical-orange-bar"></div>
+            <p class="categories-title2 bold">Crédits</p>
+        </div>
+        <div class="movie-block">
+            <p class="movie-block-separator-title bold">À venir ・ 4</p>
+            <button class="movie-arrow-slider">
+                <img src="assets/image/celebrities/icons/arrow-down.png" class="movie-block-arrow-down img-fluid" alt="Arrow">
+            </button>
+            <div class="movie-block-separator"></div>
+            <p class="movie-block-separator-title bold">Précédent ・ 8</p>
+            <button class="movie-arrow-slider">
+                <img src="assets/image/celebrities/icons/arrow-up.png" class="movie-block-arrow-up img-fluid" alt="Arrow">
+            </button>
+            <div class="movie-sub-block">
+                <img src="assets/image/celebrities/movies/fallout.png" class="movie-sub-block-image img-fluid" alt="Fallout">
+                <p class="movie-sub-block-title bold">Fallout</p>
+                <img src="assets/image/celebrities/icons/star.png" class="movie-sub-block-star img-fluid" alt="Star">
+                <p class="movie-sub-block-rate">9</p>
+                <p class="movie-sub-block-categories">Série</p>
+                <p class="movie-sub-block-date">2022</p>
+                <p class="movie-sub-block-episodes bold">0 épisode</p>
+            </div>
+            <div class="movie-block-separator"></div>
+            <div class="movie-sub-block">
+                <img src="assets/image/celebrities/movies/supersex.png" class="movie-sub-block-image img-fluid" alt="SuperSex">
+                <p class="movie-sub-block-title bold">SuperSex</p>
+                <img src="assets/image/celebrities/icons/star.png" class="movie-sub-block-star img-fluid" alt="Star">
+                <p class="movie-sub-block-rate">6,8</p>
+                <p class="movie-sub-block-categories">Série télévisée</p>
+                <p class="movie-sub-block-date">2022</p>
+                <p class="movie-sub-block-episodes bold">1 épisodes</p>
+            </div>
+            <div class="movie-block-separator"></div>
+            <div class="movie-sub-block">
+                <img src="assets/image/celebrities/movies/wonka.png" class="movie-sub-block-image img-fluid" alt="Wonka">
+                <p class="movie-sub-block-title bold">Wonka</p>
+                <img src="assets/image/celebrities/icons/star.png" class="movie-sub-block-star img-fluid" alt="Star">
+                <p class="movie-sub-block-rate">9</p>
+                <p class="movie-sub-block-categories">Série télévisée</p>
+                <p class="movie-sub-block-date">2022</p>
+                <p class="movie-sub-block-episodes bold">2 épisodes</p>
+            </div>
+            <div class="movie-block-separator"></div>
+            <div class="movie-sub-block">
+                <img src="assets/image/celebrities/movies/iii.png" class="movie-sub-block-image img-fluid" alt="III">
+                <p class="movie-sub-block-title bold">III</p>
+                <img src="assets/image/celebrities/icons/star.png" class="movie-sub-block-star img-fluid" alt="Star">
+                <p class="movie-sub-block-rate">9</p>
+                    <p class="movie-sub-block-categories">Film</p>
+                <p class="movie-sub-block-date">2022</p>
+            </div>
+            <div class="movie-block-separator"></div>
+            <div class="movie-sub-block">
+                <img src="assets/image/celebrities/movies/aquaman.png" class="movie-sub-block-image img-fluid" alt="Aquaman">
+                <p class="movie-sub-block-title bold">Aquaman</p>
+                <img src="assets/image/celebrities/icons/star.png" class="movie-sub-block-star img-fluid" alt="Star">
+                <p class="movie-sub-block-rate">9</p>
+                <p class="movie-sub-block-categories">Film</p>
+                <p class="movie-sub-block-date">2022</p>
+            </div>
+        </div>
+        <div class="limit text-center py-4">
+            <a href="#" class=""><img src="./assets/image/celebrities/icons/UP.svg" alt="Go up" class=""></a>
+        </div>
+    </main>
+    <footer class="footer text-center">
+        <div class="container p-4 pb-0 col-md-12">
+            <section class="mb-4">
+                <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" target="_blank" rel="noopener noreferrer" class="d-inline"><img src="./assets/image/contact/YOUTUBE.png" alt="youtube" width="42px" height="42px"></a>
+                <a href="" class="d-inline"><img src="./assets/image/contact/INSTAGRAM.png" alt="instagram" width="42px" height="42px"></a>
+                <a href="" class="d-inline"><img src="./assets/image/contact/FACEBOOK.png" alt="facebook" width="42px" height="42px"></a>
+                <a href="" class="d-inline"><img src="./assets/image/contact/MARKETPLACE.png" alt="marketplace" width="42px" height="42px"></a>
+                <a href="" class="d-inline"><img src="./assets/image/contact/PINTEREST.png" alt="pinterest" width="42px" height="42px"></a>
+                <a href="" class="d-inline"><img src="./assets/image/contact/TWITTER.png" alt="twitter" width="42px" height="42px"></a>
+            </section>
+        </div>
+        <div class="text-center pb-40">
+            <div class="text-white text-uppercase">
+                <a href=""><p class="d-inline px-3">newsletter</p></a>
+                <a href="contact.html"><p class="d-inline px-3">contact</p></a>
+                <a href=""><p class="d-inline px-3">modération</p></a>
+                <a href=""><p class="d-inline px-3">mention légale</p></a>
+                <a href=""><p class="d-inline px-3">c.g.u cookies</p></a>
+                <a href=""><p class="d-inline px-3">politique de confidentialité</p></a>
+            </div>
+        </div>
+        <div class="pb-1 text-white ps-4">
+            <p>droits légaux. dépôt....</p>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+</body>
+</html>

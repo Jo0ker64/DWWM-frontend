@@ -1,0 +1,40 @@
+/* FOOTER */
+
+footer
+{
+    height: 260px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.8);
+    justify-content: space-around;
+    /* align-items: flex-start; */
+    font-size: 1.2rem;
+}
+
+footer div {
+    padding: 10px 0;
+    width: 300px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    margin-left: -40px;
+}
+
+footer a:hover {
+    color: rgb(114, 57, 63);
+    text-shadow: 3px 3px 3px grey;
+}
+
+footer iframe {
+    margin-top: 50px;
+}
+

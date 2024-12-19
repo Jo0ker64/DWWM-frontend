@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    background-color: grey;
+    color: white;
+    font-family: 'Miltonian Tattoo', serif;
+    text-align: center;
+  }
+  
+  h1 {
+    padding: 2rem 1rem;
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    padding: 1rem 1rem;
+  }
+  
+  p { 
+    font-size: 1.2rem; 
+  }
+  img {
+     width: 200px 
+    }
+  
+  .choices > div {
+    display: inline-block;
+    margin: 0 1rem;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .choices > div:hover {
+    transform: scale(150%);
+    cursor:pointer;
+  }

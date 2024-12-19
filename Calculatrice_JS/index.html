@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <title>Calculette</title>
+</head>
+
+<body>
+
+  
+    <!-- creation graphique de la calculette -->
+    <form name="Calculette">
+      <table border="2" cellpadding="15">
+        <tr>
+          <td><input type="text" name="affiche"></td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+
+              <tr>
+                <td><input class="styled" type="button" value="( " onclick="ajouter('pare()');"></td>
+                <td><input class="styled" type="button" value=") " onclick="ajouter('pare()');"></td>
+                <td><input class="styled" type="button" value="π" onclick="fonctionSpeciale('π');"></td>
+
+              </tr>
+
+              <tr>
+                <td><input class="styled" type="button" value="cos" onclick="fonctionSpeciale('cos');"></td>
+                <td><input class="styled" type="button" value="sin" onclick="fonctionSpeciale('sin');"></td>
+                <td><input class="styled" type="button" value="tag" onclick="fonctionSpeciale('tan');"></td>
+                <td><input class="styled" type="button" value="log" onclick="fonctionSpeciale('log');"></td>
+              </tr>
+              <tr>
+                <td><input class="styled" type="reset" value="C"></td>
+                <td><input class="styled" type="button" value="÷" onclick="ajouter('/');"></td>
+                <td><input class="styled" type="button" value="X" onclick="ajouter('*');"></td>
+                <td><input class="styled" type="button" value="√" onclick="fonctionSpeciale('sqrt');"></td>
+              </tr>
+              <tr>
+                <td><input class="styled" type="button" value="7" onclick="ajouter('7');"></td>
+                <td><input class="styled" type="button" value="8" onclick="ajouter('8');"></td>
+                <td><input class="styled" type="button" value="9" onclick="ajouter('9');"></td>
+                <td><input class="styled" type="button" value="-" onclick="ajouter('-');"></td>
+              </tr>
+              <tr>
+                <td><input class="styled" type="button" value="4" onclick="ajouter('4');"></td>
+                <td><input class="styled" type="button" value="5" onclick="ajouter('5');"></td>
+                <td><input class="styled" type="button" value="6" onclick="ajouter('6');"></td>
+                <td><input class="styled" type="button" value="+" onclick="ajouter('+');"></td>
+              </tr>
+              <tr>
+                <td><input class="styled" type="button" value="1" onclick="ajouter('1');"></td>
+                <td><input class="styled" type="button" value="2" onclick="ajouter('2');"></td>
+                <td><input class="styled" type="button" value="3" onclick="ajouter('3');"></td>
+                <td><input class="styled" type="button" value="=" onclick="resultat();"></td>
+              </tr>
+              <tr>
+                <td><input class="styled" type="button" value="%" onclick="fonctionSpeciale('%');"></td>
+                <td><input class="styled" type="button" value="0" onclick="ajouter('0');"></td>
+                <td><input class="styled" type="button" value="." onclick="ajouter('.');"></td>
+                <td><input class="styled" type="button" value="1¹" onclick="fonctionSpeciale('pow');"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </form>
+  
+  <script src="main.js"></script>
+</body>
+
+</html>

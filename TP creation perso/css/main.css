@@ -1,0 +1,18 @@
+.section1{
+    margin-top: 50px;
+}
+body{
+    background-image: url(../images/namek.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.form-label{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.mb-3{
+    text-align: center;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link href="./assets/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="playArea">
+        <div>
+
+            <!-- The grid dimensions selector -->
+            <div class="frow">
+                <input id="gridWidthInput" type="text" placeholder="Width" size="5">
+                <input id="gridHeightInput" type="text" placeholder="Height" size="5">
+                <input name="gridDims" type="button" onclick="changeGridDimensions()" value="submit">
+            </div>
+
+            <!-- The win condition selector -->
+            <div class="frow">
+                <a>Win condition :</a>
+                <button id="decreaseWinCond" onclick="decreaseWincon()"> - </button>
+                <a id="winCondition">3</a>
+                <button id="increaseWinCond" onclick="increaseWincon()"> + </button>
+            </div>
+
+            <!-- The player number selector -->
+            <div class="frow">
+                <a>Players </a>
+                <button id="removePlayerButton" onclick="removePlayer()"> - </button>
+                <a id="playerNumber">2</a>
+                <button id="addPlayerButton" onclick="addPlayer()"> + </button>
+            </div>
+
+            <button onclick="initGame()">Click Here to start a new game.</button>
+
+        </div>
+
+        <!-- <div id="gameBackground" class="fcol" style="background-color: var(--cross-cell);"> -->
+            <div id="gameBackground" class="fcol">
+            <div id="gameDivForJS"> <!-- JS shenanigans here --> </div>
+            <div id="playerTurn" style="text-align: center;">Player Turn : 1</div>
+        </div>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

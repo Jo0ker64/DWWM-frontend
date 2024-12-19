@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inscription</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/login.css">
+  <link rel="shortcut icon" href="./assets/image/ar48px.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- DERNIERE MODIFICATION HEADER L19 à L106 -->
+  <header class="sticky-top" style="background-color: #434343;">
+    <nav class="navbar navbar-expand-xl">
+      <div class="container-fluid align-items-center">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/image/areview-header.png" alt="LOGO" width="200" height="100%">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex column-gap-2 align-items-center ms-auto order-lg-2" role="search">
+            <input class="form-control thin" type="search" placeholder="Search" aria-label="Search">
+            <a href="index.html"><i class="fa-solid fa-magnifying-glass" style="width: 20px;height: 100%;"></i></a>
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions">
+              <i class="fa-solid fa-user" style="width: 20px; height: 100%;"></i>
+            </button>
+          </form>
+          <ul class="navbar-nav d-flex flex-fill text-center order-lg-1">
+            <li class="nav-item flex-fill">
+              <a class="nav-link" href="movies.html">cinéma</a>
+            </li>
+            <li class="nav-item flex-fill">
+              <a class="nav-link" href="series.html">séries</a>
+            </li>
+            <li class="nav-item flex-fill">
+              <a class="nav-link" href="video_game.html">gaming</a>
+            </li>
+            <li class="nav-item flex-fill">
+              <a class="nav-link" href="music.html">musique</a>
+            </li>
+            <li class="nav-item flex-fill">
+              <a class="nav-link" href="book.html">livre</a>
+            </li>
+            <li class="nav-item flex-fill">
+              <a class="nav-link" href="evenement.html">événements</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-end " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header ">
+        <h5 class="offcanvas-title " id="offcanvasWithBothOptionsLabel">Se connecter</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"> </button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="input-group my-1" id="Pseudo">
+          <span class="input-group-text " id="logo_pseudo">
+            <i class="fa-solid fa-user" style="color: #f4661B;"></i>
+          </span>
+          <div class="col-sm ">
+            <input type="text" class="form-control" placeholder="Pseudo / email" aria-label="Login"
+              aria-describedby="addon-wrapping">
+          </div>
+        </div>
+        <div class="input-group my-1" id="password">
+          <span class="input-group-text " id="logo_cadenas">
+            <i class="fa-solid fa-lock" style="color: #f4661B;"></i>
+          </span>
+          <div class="col-sm ">
+            <input type="password" class="form-control" placeholder="Mot de passe" aria-label="Login"
+              aria-describedby="addon-wrapping">
+          </div>
+        </div>
+        <div class="row my-1">
+          <div class="form-check ms-2 text-start">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Se souvenir de moi
+            </label>
+          </div>
+        </div>
+        <div class="row my-1 text-center">
+          <a href=""> Mot de passe oublié ?</a>
+        </div>
+        <div class="row mt-3 text-center">
+          <a href="account.html"><button class="btn" type="submit" id="bouton_orange"> Se connecter </button> </a>
+        </div>
+        <div class="row my-1 text-center">
+          <p>Vous n'avez pas encore de compte ? <br> Rejoignez-nous !</p>
+          <a href="login.html"><button class="btn" type="submit" id="bouton_orange"> S'inscrire </button> </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ---------------------------------------------------------------------------------------------------------------- -->
+  <main>
+    <div id="formulaire" class="my-5">
+      <form class="row col-xl-6 mx-auto">
+        <div class="col-12 col-xl-6 mb-4">
+          <label for="validationDefault01" class="form-label">* Votre adresse mail</label>
+          <input type="email" class="form-control" id="validationDefault01" value="" required>
+        </div>
+        <div class="col-12 col-xl-6 mb-4">
+          <label for="validationDefault02" class="form-label">* Confirmer votre adresse mail</label>
+          <input type="email" class="form-control" id="validationDefault02" value="" required>
+        </div>
+        <div class="col-12 mb-4">
+          <label for="validationDefaultUsername" class="form-label">* Votre pseudo</label>
+          <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2"
+            required>
+        </div>
+        <div class="col-12 mb-4">
+          <p>
+            Votre mot de passe doit contenir : <br><br>
+            - 8 à 72 caractères <br>
+            - 1 chiffre <br>
+            - 1 minuscule <br>
+            - 1 majuscule <br>
+          </p>
+        </div>
+        <div class="col-12 col-xl-6 mb-4">
+          <label for="validationDefault03" class="form-label">* Votre mot de passe</label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend2"><i class="fa-solid fa-lock"style="color: #f4661B;"></i></span>
+            <input type="password" class="form-control" id="validationDefault03" required>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 mb-4">
+          <label for="validationDefault03" class="form-label">* Confirmer votre mot de passe</label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend2"><i class="fa-solid fa-lock"></i></span>
+            <input type="password" class="form-control" id="validationDefault03" required>
+          </div>
+        </div>        
+        <div class="col-12 my-2">
+          <div class="form-check col-xl-12">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              J'ai lu et j'accepte les conditions générales d'utilisation *
+            </label>
+          </div>
+        </div>
+        <div class="col-12 my-2">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2">
+            <label class="form-check-label" for="invalidCheck2">
+              Je souhaite recevoir la newsletter partenaire (bon plans, préventes...)
+            </label>
+          </div>
+        </div>
+        <div class="col-12 mt-5 mb-2">
+          <span
+            style="display: inline-block; width: 20px; height: 20px; margin-right: 5px; background-image: url(&quot;https://www.gstatic.com/recaptcha/api2/logo_48.png&quot;); background-repeat: no-repeat; background-size: 100%; background-position: center center; vertical-align: middle;"></span>
+          <span>Protection par reCAPTCHA - </span>
+          <a href="https://www.google.com/intl/fr/policies/privacy/" target="_blank"
+            style="font-size: 10px; display: inline; color: rgb(136, 136, 136); margin-top: 10px; text-decoration: underline;">Confidentialité</a><span>
+            - </span>
+          <a href="https://www.google.com/intl/fr/policies/terms/" target="_blank"
+            style="font-size: 10px; display: inline; color: rgb(136, 136, 136); margin-top: 10px; text-decoration: underline;">Conditions</a>
+        </div>
+        <div class="col-12 my-5 text-center">
+          <button class="btn btn-primary" type="submit" id="bouton_orange">Je m'inscris</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer style="background-color: #434343;">
+    <div class="text-center py-4">
+      <a class="d-inline" href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" rel="noopener noreferrer"
+        target="_blank"><img alt="youtube" height="42px" src="./assets/image/contact/YOUTUBE.png" width="42px"></a>
+      <a class="d-inline" href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img alt="instagram"
+          height="42px" src="./assets/image/contact/INSTAGRAM.png" width="42px"></a> 
+      <a class="d-inline"  href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img alt="facebook" height="42px"
+          src="./assets/image/contact/FACEBOOK.png" width="42px"></a>
+      <a class="d-inline" href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img alt="marketplace" height="42px"
+          src="./assets/image/contact/MARKETPLACE.png" width="42px"></a> 
+      <a class="d-inline" href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img alt="pinterest" height="42px"
+          src="./assets/image/contact/PINTEREST.png" width="42px"></a>
+      <a class="d-inline" href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><img alt="twitter" height="42px"
+          src="./assets/image/contact/TWITTER.png" width="42px"></a>
+    </div>
+    <div class="text-center pb-1">
+      <div class="text-uppercase lien m-0">
+        <a id="lien" class="d-inline px-3" href="">newsletter</a>
+        <a id="lien" class="d-inline px-3" href="contact.html">contact</a>
+        <a id="lien" class="d-inline px-3" href="">modération</a>
+        <a id="lien" class="d-inline px-3" href="">mention légale</a>
+        <a id="lien" class="d-inline px-3" href="">c.g.u.</a>
+        <a id="lien" class="d-inline px-3" href="">cookies</a>
+        <a id="lien" class="d-inline px-3" href="">politique de confidentialité</a>
+      </div>
+    </div>
+    <div class="pb-1 text-white ps-4">
+      <p>droits légaux. dépôt....</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+    integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>

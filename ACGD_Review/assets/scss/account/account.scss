@@ -1,0 +1,12 @@
+$background-color: #434343;
+$lh-h1: 20px;
+
+@mixin font-weight($font-weight){
+    font-weight: $font-weight;
+}
+header {
+	color: $background-color;
+	& h1{
+		$font-weight: 700;
+	}
+}

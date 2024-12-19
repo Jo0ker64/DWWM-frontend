@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choix de lettre au hasard</title>
+</head>
+<body>
+    <h1>Choix de lettre au hasard</h1>
+    <p id="resultat">Cliquez sur le bouton "Start" pour choisir une lettre au hasard.</p>
+    <button onclick="demarrerChoix()">Start</button>
+
+    <script>
+        function choisirLettreAuHasard() {
+            const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+            const lettreAleatoire = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+            document.getElementById("resultat").textContent = "La lettre choisie au hasard est : " + lettreAleatoire;
+        }
+
+        function demarrerChoix() {
+            document.getElementById("resultat").textContent = "Le script va choisir une lettre au hasard après 5 secondes.";
+            setTimeout(choisirLettreAuHasard, 5000); // Attendre 10 secondes (10000 millisecondes)
+        }
+    </script>
+    
+</body>
+</html>

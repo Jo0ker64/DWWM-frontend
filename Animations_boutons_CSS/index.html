@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- creer un header a 100% avec logo et menu de navigation -->
+    <header class="container-fluid py-3" id="header">
+        <div class="row">
+            <div class="col-2 col-md-4">
+                <img src="https://picsum.photos/200/80" alt="logo" class="img-fluid">
+            </div>
+            <div class="col-10 col-md-8 app-center">
+                <!-- creer un menu de navigation bootstrap -->
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid g-0">
+        <div class="row">
+            <div class="col-12">
+                <picture>
+                    <source srcset="https://picsum.photos/1920/400" media="(min-width: 1200px)">
+                    <source srcset="https://picsum.photos/992/400" media="(min-width: 992px)">
+                    <source srcset="https://picsum.photos/768/400" media="(min-width: 768px)">
+                    <source srcset="https://picsum.photos/576/800" media="(min-width: 576px)">
+                    <img src="https://picsum.photos/1920/400" alt="image" class="img-fluid">
+                </picture>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <main class="col-md-9">
+                <section>
+                    <header>
+                        <h1>Titre de la section</h1>
+                    </header>
+                    <div class="row">
+                        <article class="col-6">
+                            <img src="https://picsum.photos/200/200" alt="" class="img-fluid">
+                        </article>
+                        <article class="col-6">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, reprehenderit.</p>
+                        </article>
+                    </div>
+                    <footer>
+                        <a href="#" class="btn btn-primary">Lire la suite</a>
+                    </footer>
+                </section>
+            </main>
+            <aside class="col-md-3">
+                <section>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Lien 1</a></li>
+                            <li><a href="#">Lien 2</a></li>
+                            <li><a href="#">Lien 3</a></li>
+                            <li><a href="#">Lien 4</a></li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <section>
+                    <header>
+                        <h2>Titre de la section</h2>
+                    </header>
+                    <div class="row">
+                        <article class="col-12">
+                            <img src="https://picsum.photos/200/200" alt="" class="img-fluid">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, reprehenderit.</p>
+                        </article>
+                    </div>
+                    <footer>
+                        <a href="#" class="btn btn-primary">Lire la suite</a>
+                    </footer>
+                </section>
+            </aside>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item slideDown">Slide Down</div>
+        <div class="flex-item slideUp">Slide Up</div>
+        <div class="flex-item slideLeft">Slide Left</div>
+        <div class="flex-item slideExpandUp"> Expand</div>
+        <div class="flex-item fadeIn">Fade-in</div>
+        <div class="flex-item bigEntrance">Entrance</div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item pulse">Pulse</div>
+            <div class="flex-item floating">Floating</div>
+            <div class="flex-item tossing">Tossing</div>
+            <div class="flex-item fade">Fade</div>
+            <div class="flex-item grow">Grow</div>
+            <div class="flex-item circle">Circle</div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item curls">Curls</div>
+            <div class="flex-item bubble-bottom">Bubble</div>
+
+            <div class="flex-item">
+                <div class="light">Light</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>

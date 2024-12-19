@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>reveil rotatif</title>
+</head>
+<body>
+    
+    <div id="container">
+        <canvas id="canvas" width="350" height="350"></canvas>
+      </div>
+      
+      <div id="clock">
+        <div id="hourHand"></div>
+        <div id="minuteHand"></div>
+        <div  id="secondHand"></div>
+    </div>
+      <div class="btn">
+        <button id="sonner">sonner</button>
+        <button id="stopper">stop</button>
+        <button id="réveil">réveil</button> 
+      </div>
+      
+      <audio id="jouer" loop>
+        <source src="./alarm.wav">
+      </audio>
+      
+      <script type="text/javascript" src="main.js"></script>
+
+
+ <!-- Faire le script pour avoir le son de tic tac aiguille
+ <audio id="tictac" loop><source src="./tictac.wav"</audio> -->
+
+
+
+
+</body>
+</html>
+
+
+    
